@@ -1,5 +1,7 @@
 import React from "react";
 import Swal from 'sweetalert2'
+import Header from "./header";
+import Footer from "./footer";
 
 export default function ContactSection(){
 
@@ -42,6 +44,8 @@ export default function ContactSection(){
   };
 
   return(
+  <>
+<Header />
 <form onSubmit={onSubmit}>
   <h2>Contact Form</h2>
   <div className="name_mail">
@@ -73,6 +77,9 @@ export default function ContactSection(){
           <button type="submit" name="submit">Submit</button>
         </div>
 </form>
+
+<Footer />
+</>
   );
 
 }

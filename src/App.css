@@ -97,6 +97,7 @@ nav a::after {
     color: #333;
     position: relative;
     text-decoration: none;
+    z-index: 1;
   }
 
   
@@ -110,11 +111,15 @@ nav a::after {
     font-size: 22px;
   }
 
-  .hamberger{
-    display:none;
-    cursor:pointer;
-    padding: 10px; 
-  }
+  .mobile-navigation{
+    display: none;
+}
+
+.desktop-navigation{
+  color:#333;
+}
+
+
 
   .bar{
     display:block;
@@ -395,6 +400,8 @@ select{
 }
 
 @media(max-width:760px){
+
+ 
   .hamberger{
     grid-area: hamberger;
     display:block;
@@ -425,15 +432,11 @@ select{
   }
 
   .nav-menu{
-    position:fixed;
-    right:100%;
-    background-color: #fff;
+    display:flex;
     text-align: center;
-    left: 100%;
-    width:100%;
+    width:35%;
     top:70px;
-    height:70%;
-    flex-direction: column;
+   flex-direction: column;
     color:#333;
   
   }
@@ -442,7 +445,64 @@ select{
     color:#333;
   }
   
-  .nav-menu.active{
-    left:0;
-  }
+  
+
+  /*hamberger*/
+
+  .desktop-navigation{
+    display: none;
+}
+
+.mobile-navigation{
+  grid-area: hamberger;
+   display: flex;
+}
+
+.nav-menu.active {
+  grid-area: hamberger;
+  display: block;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 60px;
+  width: 300px;
+  right: -50px;
+ 
+
+
+  height:15em;
+  z-index: 0;
+  position:relative;
+  margin-bottom: 30px;
+  top:-40px;
+
+
+  
+ 
+}
+
+.nav-menu.active a{
+  grid-area: hamberger;
+  color:#333;
+  justify-content: flex-end;
+ 
+}
+
+.nav-menu.active ul{
+  margin-left: 6em;
+}
+
+.HamburgerMenu{
+position: absolute;
+top:30px;
+
+}
+
+.nav-menu a{
+  
+}
+
+
+
+
 }
