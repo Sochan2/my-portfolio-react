@@ -13,7 +13,7 @@ export default function Work(){
 
       <section class="work_card">
         <img src="img/japan_rice_homepage.jpg" alt="Japan rice MICO website preview picture"/>
-        <h3><a href="https://japanricerealm.com">Japan rice ( HTML and CSS)</a></h3>
+        <h3><a href="https://sochan2.github.io/japanese-rice/">Japan rice ( HTML and CSS)</a></h3>
       
       </section>
 
