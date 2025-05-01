@@ -23,6 +23,10 @@ body{
   margin:15px;
 }
 
+.about_me {
+  min-height: 100vh;
+}
+
 
 h1{
   font-family: H1Font;
@@ -287,16 +291,31 @@ footer a:hover {
   grid-template-areas: 
   "picture"
   "text" ;
-
-  margin-right: 20px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
- 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  padding-bottom: 20px;
  
 }
-.work_card img{
-  width:370px;
-  height:370px;
+.work_card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
 
+.work_card img{
+  width:100%;
+  height:auto;
+
+}
+
+.work-button{
+  border: 1px solid #333 ;
+  width:30%;
+  height:7%;
+  margin-top: 20px;
+}
+
+.work-button:hover{
+  background-color: #E76F51;
+  color:#fff;
 }
 
 .work_big_card{
