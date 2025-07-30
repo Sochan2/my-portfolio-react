@@ -7,6 +7,14 @@
 @font-face {
   font-family: 'H1Font';
   src: url('../public/font/h1-font.otf') format('opentype');
+
+
+font-family: 'Blog-p-font';
+src: url('../public/font/blog-p-font.ttf') format('opentype');
+
+
+font-family:'poppins';
+src: url('../public/font/poppins.ttf') format('opentype');
 }
 /*
 
@@ -417,6 +425,60 @@ select{
   color: #fff;
 
 }
+
+/*blog detail*/
+
+.blog-detail-main{
+  padding-left:2rem;
+  padding-right:2rem
+}
+.blog-detail-main img{
+padding:20px;
+width:70%;
+height:25em;
+}
+
+.blog-detail-main pre{
+  background-color: #333;
+  padding:20px;
+  border-radius: 20px;
+}
+
+.blog-detail-main code{
+  color:#fff;
+  font-size:14px;
+}
+
+.blog-detail-main p{
+  font-family: Blog-p-font;
+  font-size: 17px;
+  margin: 10PX;
+  line-height: 1.6;
+
+}
+
+.blog-detail-main h1, .blog-detail-main h2, .blog-detail-main h3{
+  font-family: poppins;
+}
+
+.blog-detail-main h3{
+  font-size:20px;
+  margin:20px 0;
+}
+
+.blog-detail-main h2{
+  font-size:2.3em;
+  margin:27px 0;
+}
+
+.blog-detail-main h1{
+  font-size:3.5em;
+}
+
+
+
+
+
 
 @media(max-width:760px){
 

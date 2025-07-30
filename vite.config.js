@@ -3,8 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  esbuild: {
-    loader: { '.js': 'jsx' }
-  },
+  // 以下の esbuild の設定は削除またはコメントアウトしてください
+  // esbuild: {
+  //   loader: 'jsx',
+  //   include: /src\/.*\.js$/,
+  // },
 })
 
