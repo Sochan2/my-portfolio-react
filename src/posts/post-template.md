@@ -5,10 +5,10 @@ category: "React"
 tags: ["React", "Hooks"]
 slug: "react-hooks"
 excerpt: "This article is described about Tanstack Query"
-thumbnail: "/public/img/thumbnails/Tanstack-query-thumbnail.png"
+thumbnail: "/img/thumbnails/Tanstack-query-thumbnail.png"
 ---
 
-![Tanstack Query visual illustration](/public/img/blog/tanstack-query.png)
+![Tanstack Query visual illustration](/img/blog/tanstack-query.png)
 
 When you fetch data from API, are you writing the code like this?
 
@@ -93,7 +93,7 @@ function UserList() {
 - You can decide when it refetchs API
 
 ## TanStack Query VS Redux VS SWR
-![async state tools compared by ease of use](/public/img/blog/tanstack_redux_swr.png)
+![async state tools compared by ease of use](/img/blog/tanstack_redux_swr.png)
 
 ### LibraryPurpose
 
