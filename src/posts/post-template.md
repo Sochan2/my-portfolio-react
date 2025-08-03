@@ -4,7 +4,7 @@ date: "2025-07-28"
 category: "React"
 tags: ["React", "Hooks"]
 slug: "react-hooks"
-excerpt: "This article is described about Tanstack Query"
+excerpt: "This article is described about Tanstack Query.if you add it to 'await', 'error', cache'etc, need to add more state and useEffect The code will be so messy."
 thumbnail: "/img/thumbnails/Tanstack-query-thumbnail.png"
 ---
 

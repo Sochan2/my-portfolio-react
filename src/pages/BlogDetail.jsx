@@ -20,33 +20,51 @@ export default function BlogDetail() {
   return (
   
     <>
-      <main className = 'blog-detail-main w-full md:3/4 bg-white p6 rounded shadow'>
-      {post.thumbnail && (
-          <img
-            src={post.thumbnail}
-            alt="Blog thumbnail"
-            className="rounded-lg mb-4 w-full h-auto"
-          />
-        )}
-
-      <h1>{post.title}</h1>
-      <p className="text-gray-500">{post.date} | {post.category}</p>
-      <div className = "flex flex-col md:flex-row">
-      <article className="blog-detail">
-      <ReactMarkdown
-        children={post.content}
-        remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw]}
-      />
-    </article>
+  
+    <main className = 'blog-detail-main container-xl grid-gap-6 xl:grid-cols-12 '>
+      <div className="col-span-9 xl:col-span-8 col-start-2">
+        <div className="max-w-3xl mx-auto px-4 md:px-0">
+          <div className="blog-top">
+          <h1>{post.title}</h1>
+         
+          <div class="category-date-detail">
+            <p class="post-category">{post.category}</p>
+            <p>{post.date}</p>
+            </div>
+            
+        {post.thumbnail && (
+            <img
+              src={post.thumbnail}
+              alt="Blog thumbnail"
+              className="mb-4 w-full h-auto"
+            />
+          )}
+         
+      
+          </div>
+       
+      
+        <article className="blog-detail">
+        <ReactMarkdown
+          children={post.content}
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
+        />
+        </article>
+        </div>
+        </div>
   
 
-    <aside className="w-full md:w-1/4 md:pl-6 mt-10 md:mt-0">
-        <Sidebar />
+    <aside className="col-span-3 pt-10">
+        <Sidebar /> 
       </aside>
-        </div>
+
+    
+   
        
     </main>
+
+     
     </>
     
      

@@ -18,15 +18,20 @@ useEffect(()=>{
     <>
       <h1>Blog</h1>
       <ul>
-      <div className="grid grid-cols-3 gap-4">
+      <div className=" blog grid grid-cols-3 gap-4 m-4">
         {posts.map(post=>(
          
              <li key ={post.slug}>
             <Link to={`/blog/${post.slug}`}>
             <img src={post.thumbnail} alt={post.title}></img>
-            <h2>{post.title}</h2>
-            <p>{post.date}|{post.category}</p>
+            <div class="category-date">
+            <p class="post-category">{post.category}</p>
+            <p>{post.date}</p>
+            </div>
+           
+            <h3>{post.title}</h3>
             <p className="mt-2 text-gray-700">{post.excerpt}</p>
+           
             
             </Link>
           </li>
