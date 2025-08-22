@@ -1,19 +1,28 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Modal from "../components/Modal";
 
 export default function Work(){
+  const location = useLocation();
+  const isJapanese = location.pathname.startsWith("/ja");
   const [selectProject, setSelectProject]=useState(null);
 
   const projects = [
     {
       title:"Japan rice",
       technology: "HTML, CSS, PWA",
-      image:"./img/japan_rice_homepage.jpg",
+      image:"/img/japan_rice_homepage.jpg",
       alt:"Japan rice MICO website preview picture",
-      plan:"Think about SEO and Responsive design. Include latest web technology,PWA",
-      users:"This is Japanese rice farm website. This products are made in Nabari city and sell products for foreign people.",
+      plan:{
+        en:"Think about SEO and Responsive design. Include latest web technology,PWA",
+        ja:"SEOとリスポンシブルデザインを考えて作りましたそして、最新のテクノロジーであるPWAも入れ込みました",
+      },
+      users:{
+        en:"This is Japanese rice farm website. This products are made in Nabari city and sell products for foreign people.",
+        ja:"日本のお米農家のウェブサイトです。この商品は名張市でできたお米で海外の方をターゲットにウェブサイトを構築しました。"
+      },
       link:"https://sochan2.github.io/japanese-rice/"
 
     },
@@ -21,57 +30,82 @@ export default function Work(){
     {
       title:"Magic Book",
       technology: "PHP, MySQL",
-      image:"img/magicbook_website.jpg",
+      image:"/img/magicbook_website.jpg",
       alt:"Magic book thumbnail picture",
-      plan:"Easy Content Management System which include Login system. And, easy to make your favourite book list website",
-      users:"Users will make their own favorite book list by themselve. They can upload book picture, enter title, Author and published age.",
+      plan: {
+        en: "Easy Content Management System which include Login system. And, easy to make your favourite book list website",
+        ja: "ログインシステムを含む簡単なCMS。自分のお気に入りの本リストを簡単に作成できるウェブサイトです。"
+      },
+      users: {
+        en: "Users will make their own favorite book list by themselve. They can upload book picture, enter title, Author and published age.",
+        ja: "ユーザーは自分の好きな本のリストを作成できます。本の画像をアップロードし、タイトル、著者、出版年を入力できます。"
+      },
       link:""
-
     },
-
     {
       title:"One Ring Rental",
       technology: "React, Bootstrap, Next.js",
-      image:"img/react_work.png",
+      image:"/img/react_work.png",
       alt:"One ring rental thumbnail picture",
-      plan:"Change the website from HTML to React and Next.js. As a CSS, I installed bootstrap. Also, make counting sculpture list. In order  to make it, used useState. More important things of this web app is changing from all HTML and CSS website to React and Next.js ",
-      users:"This is just a template property rental web app website.",
+      plan: {
+        en: "Change the website from HTML to React and Next.js. As a CSS, I installed bootstrap. Also, make counting sculpture list. In order  to make it, used useState. More important things of this web app is changing from all HTML and CSS website to React and Next.js",
+        ja: "HTMLからReactとNext.jsへサイトを変更。CSSにはBootstrapを使用。また、カウント可能なスカルプチャリストを作成するためにuseStateを使用。このWebアプリで最も重要なのは、HTMLとCSSだけのサイトをReactとNext.jsに移行したことです。"
+      },
+      users: {
+        en: "This is just a template property rental web app website.",
+        ja: "これはテンプレートの不動産レンタルWebアプリです。"
+      },
       link:"https://my-react-2xddgjhxe-sochan2s-projects.vercel.app/"
-
     },
+  
 
     {
       title:"Generate Password",
       technology: "HTML, CSS, JS",
-      image:"img/generate-password-site.png",
+      image:"/img/generate-password-site.png",
       alt:"generate password site preview",
-      plan:"You can copy generated password only one click. If you click button, make strong password for you",
-      users:"These days, weak password cause a big problem. To solve that, make strong password!",
+      plan: {
+        en: "You can copy generated password only one click. If you click button, make strong password for you",
+        ja: "生成されたパスワードをワンクリックでコピー可能。ボタンを押すと強力なパスワードを生成します。"
+      },
+      users: {
+        en: "These days, weak password cause a big problem. To solve that, make strong password!",
+        ja: "最近、弱いパスワードは大きな問題になります。そのため、強力なパスワードを作成しました。"
+      },
       link:"https://sochan2.github.io/generateio/"
-
     },
 
     {
       title:"Boom Radio",
       technology: "HTML, CSS, JS, React, Tailwind css",
-      image:"img/boom_radio.png",
-      alt:"generate password site preview",
-      plan:"We focused on UI and UX design to ensure the menu remains clean and user-friendly on mobile. Also, we include great functions such as live playing and retrieve latest potcast episode from Spotify and able to listen on website. ",
-      users:"This is real client project. Target audience is students age who lives in Perth. They try to spread a community in Perth",
+      image:"/img/boom_radio.png",
+      alt:"Boom Radio project preview",
+      plan: {
+        en: "We focused on UI and UX design to ensure the menu remains clean and user-friendly on mobile. Also, we include great functions such as live playing and retrieve latest potcast episode from Spotify and able to listen on website.",
+        ja: "UI/UXデザインに重点を置き、モバイルでもメニューが見やすくユーザーフレンドリーになるよう設計。また、ライブ再生やSpotifyから最新のポッドキャストを取得してウェブ上で聴ける機能も実装しました。"
+      },
+      users: {
+        en: "This is real client project. Target audience is students age who lives in Perth. They try to spread a community in Perth",
+        ja: "実際のクライアントプロジェクト。ターゲットはパース在住の学生で、コミュニティを広げることを目的としています。"
+      },
       link:"https://boom-radio.vercel.app/"
-
     },
 
     {
       title:"Sightseeing map app",
       technology: "Next.js, Tailwind css, Python, Django, MongoDB, Google map API",
-      image:"img/sightseeing-map-thumbnail.png",
-      alt:"sightseeing map app preview",
-      plan:"Make web app from scratch to cooperate with backend people. We really focus on database,UI and Login page so far ",
-      users:"This app helps to find user's gem's restaurants, cafe and sightseeing spots. Users can write very detailed reviews like blog and post. They only can see spots within 30 min from current place not to disturb User Interface.",
+      image:"/img/sightseeing-map-thumbnail.png",
+      alt:"Sightseeing map app preview",
+      plan: {
+        en: "Make web app from scratch to cooperate with backend people. We really focus on database,UI and Login page so far",
+        ja: "バックエンドチームと協力してゼロからWebアプリを作成。データベース、UI、ログインページに重点を置きました。"
+      },
+      users: {
+        en: "This app helps to find user's gem's restaurants, cafe and sightseeing spots. Users can write very detailed reviews like blog and post. They only can see spots within 30 min from current place not to disturb User Interface.",
+        ja: "このアプリはユーザーが隠れたレストラン、カフェ、観光スポットを見つけるのを助けます。ユーザーはブログのように詳細なレビューを書け、現在地から30分以内のスポットのみ表示され、UIを妨げません。"
+      },
       link:"https://github.com/AstromaoLabs/sightseeing-map"
-
-    },
+    }
 
 
   ]
@@ -97,7 +131,13 @@ export default function Work(){
         })}
       </section>
 
-      <Modal project={selectProject} onClose={()=>setSelectProject(null)} />
+      {selectProject && (
+  <Modal 
+    project={selectProject} 
+    onClose={() => setSelectProject(null)} 
+    isJapanese={isJapanese} 
+  />
+)}
  
   </main>
 

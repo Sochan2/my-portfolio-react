@@ -7,6 +7,9 @@ import AboutUs from "./pages/Aboutus";
  import Blog from './pages/Blog';
  import BlogDetail from './pages/BlogDetail';
  import './App.css';
+ import HomeJa from "./pages/Home-ja";
+ import AboutUsJa from "./pages/AboutusJa";
+ 
 
 
  const App = () => {
@@ -19,6 +22,9 @@ import AboutUs from "./pages/Aboutus";
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogDetail />} /> 
         <Route path="/contact" element={<Contact />} />
+        <Route path="/ja" element={<HomeJa />} />
+        <Route path="/ja/about" element={<AboutUsJa />} />
+        <Route path="/ja/work" element={<Work />} />
       </Routes>
     
    );

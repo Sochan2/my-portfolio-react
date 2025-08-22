@@ -125,7 +125,7 @@ nav a::after {
   
   } 
 
-  nav a:hover{
+  .nav-link:hover{
     color:#E76F51;
     font-size: 22px;
   }

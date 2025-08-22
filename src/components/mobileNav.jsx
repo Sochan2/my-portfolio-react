@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-export default function MobileNav(){
+export default function MobileNav({ isJapanese}){
 
   const [click, setClick] = useState(false);
   
@@ -19,7 +19,7 @@ export default function MobileNav(){
         onClick={() => setClick(!click)}
       />
       <div className={`nav-menu ${click ? "active" : ""}`}>
-        {click && <NavLinks />}
+      {click && (isJapanese ? <NavLinksJa /> : <NavLinks />)}
       </div>
     </nav>
   );

@@ -1,4 +1,4 @@
-export default function Modal({project,onClose}){
+export default function Modal({project,onClose,isJapanese}){
   if (!project) return null;
 return(
   <div className="bg-opacity-60 fixed inset-0 z-50">
@@ -14,10 +14,10 @@ return(
           <strong>Technology:</strong> {project.technology}
         </p>
         <p className="text-sm mb-1">
-          <strong>Plan:</strong> {project.plan}
+        <strong>Plan:</strong> {project.plan[isJapanese ? "ja" : "en"]}
         </p>
         <p className="text-sm mb-4">
-          <strong>Users:</strong> {project.users}
+        <strong>Users:</strong> {project.users[isJapanese ? "ja" : "en"]}
         </p>
         <a
           href={project.link}
