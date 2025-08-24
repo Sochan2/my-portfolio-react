@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import getAllPosts from "../utils/getAllPosts.jsx";
+import Header from '../components/header.jsx';
+import Footer from '../components/footer.jsx';
 
 const Blog = ()=>{
 const [posts,setPosts] = useState([]);
@@ -15,8 +17,10 @@ useEffect(()=>{
 
 
   return(
-    <>
-      <h1>Blog</h1>
+    <> 
+    <Header />
+    <main>
+    <h1>Blog</h1>
       <ul>
       <div className=" blog grid grid-cols-3 gap-4 m-4">
         {posts.map(post=>(
@@ -40,6 +44,9 @@ useEffect(()=>{
           </div>
       
       </ul>
+    </main>
+    <Footer />
+     
     </>
   )
 }

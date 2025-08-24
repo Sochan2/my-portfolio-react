@@ -27,21 +27,7 @@ export default function Work(){
 
     },
 
-    {
-      title:"Magic Book",
-      technology: "PHP, MySQL",
-      image:"/img/magicbook_website.jpg",
-      alt:"Magic book thumbnail picture",
-      plan: {
-        en: "Easy Content Management System which include Login system. And, easy to make your favourite book list website",
-        ja: "ログインシステムを含む簡単なCMS。自分のお気に入りの本リストを簡単に作成できるウェブサイトです。"
-      },
-      users: {
-        en: "Users will make their own favorite book list by themselve. They can upload book picture, enter title, Author and published age.",
-        ja: "ユーザーは自分の好きな本のリストを作成できます。本の画像をアップロードし、タイトル、著者、出版年を入力できます。"
-      },
-      link:""
-    },
+
     {
       title:"One Ring Rental",
       technology: "React, Bootstrap, Next.js",
@@ -97,7 +83,7 @@ export default function Work(){
       image:"/img/sightseeing-map-thumbnail.png",
       alt:"Sightseeing map app preview",
       plan: {
-        en: "Make web app from scratch to cooperate with backend people. We really focus on database,UI and Login page so far",
+        en: "Make web app from scratch to cooperate with backend people. We really focus on database,UI and Login page.",
         ja: "バックエンドチームと協力してゼロからWebアプリを作成。データベース、UI、ログインページに重点を置きました。"
       },
       users: {

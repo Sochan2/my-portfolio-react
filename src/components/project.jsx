@@ -11,13 +11,13 @@ const projects = [
   },
 
   {
-    src:"./img/sightseeing-map-project.png",
+    src:"./img/japan_rice_homepage.jpg",
     alt:"Sightseeing Map project top imagee",
-    url:"https://example.com/sightseeing-map/", 
-    projectTitle:"Sightseeing Map",
+    url:"https:japanricerealm.com", 
+    projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "This project focuses on creating an interactive sightseeing map for travelers, helping them explore new places with ease and convenience. They can find the hidden place based on the evaluation and very detailed review from users.",
-      ja: "旅行者向けにインタラクティブな観光地図を作成するプロジェクトです。評価やユーザーによる詳細なレビューを基に、隠れた観光スポットを簡単に見つけることができます。"
+      en: "This website is for a rice farmer who is producing in Nabari city in Japan. And, we are targetting for foreigners. ",
+      ja: "このウェブサイトのクライアントは名張市でお米を農家をしています。ターゲットオーディエンスは海外の方を想定しています。HTML, CSS, JS, PWAの技術を使って作ったWebsiteです。"
     }
   }
 ]
