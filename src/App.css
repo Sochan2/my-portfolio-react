@@ -191,19 +191,17 @@ main{
 .expertise-grid div{
  /* Dedsign */
 
-
+background-color: #fff;
 border: 2px solid #333;
 padding:3em;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
 
 }
 
 .expertise-grid{
   position:relative;
   z-index:2;
-  background-color: #fff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
-
-
+  background-color: transparent; 
 
 }
 
@@ -233,6 +231,8 @@ box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 .expertise-section{
   position:relative;
   margin-bottom: 6em;
+  background-color: #f4f4f4;
+  padding: 3em 1em;
 }
 
 

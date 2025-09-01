@@ -56,8 +56,8 @@ gsap.registerPlugin(ScrollTrigger);
       <section className="expertise-section">
         <h2>My Expertise</h2>
         <div className="expertise-background"></div>
-        <div className="grid grid-cols-3 gap-4 expertise-grid ">
-          <div className="design-section">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 expertise-grid ">
+          <div className="design-section p-6 m-3 shadow-md">
           <img className="expertise-logo" src="/img/design-logo.png" alt="design logo picture with orange color" />
           <h3>Design</h3>
 
@@ -82,7 +82,7 @@ gsap.registerPlugin(ScrollTrigger);
 
           </div>
 
-          <div className="development">
+          <div className="development p-6 shadow-md m-3">
           <img className="expertise-logo" src="/img/development-logo.png" alt="design logo picture with orange color" />
           <h3>Development</h3>
           <p>
@@ -106,7 +106,7 @@ gsap.registerPlugin(ScrollTrigger);
 
           </div>
 
-          <div className="marketing">
+          <div className="marketing p-6 shadow-md m-3">
           <img className="expertise-logo" src="/img/marketing-logo.png" alt="design logo picture with orange color" />
           <h3>Marketing</h3>
           <p>

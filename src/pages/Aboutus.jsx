@@ -6,7 +6,7 @@ export default function AboutUs(){
     <>
     <Header />
     <main>
-    <section class="about_me grid grid-cols-2 gap-4 ">
+    <section class="about_me grid grid-cols-1 md:grid-cols-2 gap-8 gap-4 ">
 
       <div className = "aboutme-grid-text text-center ">
       <p>About Me Little</p>
@@ -19,12 +19,12 @@ export default function AboutUs(){
       </div>
    </section>
 
-   <section className = "my-journey grid grid-cols-2">
+   <section className = "my-journey grid grid-cols-1 md:grid-cols-2">
        <div className = "my-journey-image">
          <img src = "/img/journey.png"></img>
        </div>
 
-       <div className="my-journey-text ">
+       <div className="my-journey-text  ">
        <h2>My Journey</h2>
        <p>At first, I was studying about business administrations and marketings in Kinki University, where I gained insight into how digital platforms shape the way businesses connect with people.  That curiosity led me to explore web marketing and web developments, which sparked my interest in the technical side of digital experiences. <br></br><br></br>
        That interest led me to take a big step. After graduation of universities, I decided to move to Australia and dive into the web development industry. I ended up at TAFE in Perth and built a strong foundation in essential skills like HTML, CSS, JavaScript, and React. Not only the code, but also knew the importance of communication and teamwork skills. As a consequences,
@@ -36,7 +36,7 @@ my background in both business and tech gives me a unique perspective and this p
    </section>
 
 
-   <section className = "education grid grid-cols-2">
+   <section className = "education grid grid-cols-1 md:grid-cols-2">
        <div className = "education-image">
          <img src = "/img/education.png"></img>
        </div>
