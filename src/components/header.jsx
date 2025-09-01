@@ -13,7 +13,7 @@ export default function Header(){
   return(
     <>
   <header>
-    <img src="/img/profile.png" alt="soki's profile logo"/>
+    <img className="my-logo" src="/img/profile.png" alt="soki's profile logo"/>
     <DesktopNav isJapanese={isJapanese}/>
     <MobileNav isJapanese={isJapanese}/>
 

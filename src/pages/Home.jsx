@@ -44,24 +44,103 @@ gsap.registerPlugin(ScrollTrigger);
    
     <section className="about_me" ref={aboutRef}>
      
-      <h1 className="">I'm web designer and web developer</h1>
+      <h1 className="">I'm web designer <br></br>
+      &nbsp; &nbsp;&web developer</h1>
       <h2>I design code simply and beautifully!!</h2>
      
       
-      <img src="img/portfolio_home.gif " alt=" do coding" />
+      <img src="/public/img/soki-coder.gif " alt=" do coding" />
     </section>
 
       <section className="intro">
-        <h2>About me Little</h2>
+      <section className="expertise-section">
+        <h2>My Expertise</h2>
+        <div className="expertise-background"></div>
+        <div className="grid grid-cols-3 gap-4 expertise-grid ">
+          <div className="design-section">
+          <img className="expertise-logo" src="/img/design-logo.png" alt="design logo picture with orange color" />
+          <h3>Design</h3>
 
-        <p><strong>I am Soki,</strong> a Fron-end web developer based in Perth.<br/>
-          My journey into this IT industory starts from 2023, I began as a certificate IV and finnaly 
-          earned a diploma in front-end Web development at North Metropolitan TAFE.
-        </p>
-       <p>I build responsive, great UI/UX website and APP using React, JS and modern tools</p>
+          <p>
+            I value with a simple design. I always keep in mind to clean design, user interactive designs. 
+          </p>
+          <p><strong>What I will design</strong></p>
+          <ul>
+            <li>UX, UI</li>
+            <li>Wireframe and Mockup</li>
+            <li>Color palletes</li>
+            
+          </ul>
+
+          <p><strong>Tool</strong></p>
+          <ul>
+            <li>Figma</li>
+            <li>Draw.io</li>
+            <li>Canva</li>
+          </ul>
+
+
+          </div>
+
+          <div className="development">
+          <img className="expertise-logo" src="/img/development-logo.png" alt="design logo picture with orange color" />
+          <h3>Development</h3>
+          <p>
+          I write clean and understandable code that is easy for teams to work together and maintain. 
+          </p>
+          <p><strong>What I will write code</strong></p>
+          <ul>
+            <li>UX, UI</li>
+            <li>Wireframe and Mockup</li>
+            <li>Color palletes</li>
+            
+          </ul>
+
+          <p><strong>Tool</strong></p>
+          <ul>
+            <li>Tailwind</li>
+            <li>Bootstrap</li>
+            <li>VS code</li>
+            <li>GitHub</li>
+          </ul>
+
+          </div>
+
+          <div className="marketing">
+          <img className="expertise-logo" src="/img/marketing-logo.png" alt="design logo picture with orange color" />
+          <h3>Marketing</h3>
+          <p>
+          I value understanding user needs. I analyse user behaviour and apply those insights to SEO strategies to improve engagement.          </p>
+          <p><strong>What I will analyze</strong></p>
+          <ul>
+            <li>Persona</li>
+            <li>Segmentation</li>
+            <li>Market Research</li>
+            <li>AB testing</li>
+          </ul>
+
+          <p><strong>Tool</strong></p>
+          <ul>
+            <li>Google Analytics</li>
+            <li>Google Search Console</li>
+            <li>Keyword Planner</li>
+          </ul>
+
+          </div>
+          
+      
+     
+
+        </div>
+        </section>
+
+       
+
+
+  
       </section>
-      <Skills />
-      <h2>Project</h2>
+     
+      <h2>My Work</h2>
       <Project />
       </main>
       <Footer />

@@ -34,9 +34,7 @@
 
 
 
-body{
-  margin:15px;
-}
+
 
 
 
@@ -48,6 +46,9 @@ h1{
 
 h2{
   font-size:2.5em;
+  font-weight: bold;
+  margin-bottom: 45px;
+  text-align: center;
 }
 
 h3{
@@ -64,8 +65,16 @@ header{
   display:grid;
   grid-template-columns: repeat(３,1fr);
   grid-template-areas: "logo navigation language";
+  margin-top: 3.5em;
+  align-items:center;
+  margin:7em;
 
 
+}
+
+.my-logo{
+  width:120px;
+  height:120px;
 }
 
 .language{
@@ -137,6 +146,12 @@ nav a::after {
 
 
 
+main{
+  margin:7em;
+}
+
+
+
   .bar{
     display:block;
     width:30px;
@@ -153,11 +168,75 @@ nav a::after {
   text-align: center;
   margin:20px;
   margin-bottom:3em;
+  background-image: url(/public/img/home-background.png);
 }
 
 .about_me img{
   margin: auto;
 }
+
+.expertise-logo{
+  width:70px;
+  height:70px;
+  margin:auto;
+}
+
+.expertise-grid p strong {
+  display: block;
+  margin-top: 2em;
+  margin-bottom:0.5em;
+  color:#E76F51;
+}
+
+.expertise-grid div{
+ /* Dedsign */
+
+
+border: 2px solid #333;
+padding:3em;
+
+}
+
+.expertise-grid{
+  position:relative;
+  z-index:2;
+  background-color: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+
+
+
+}
+
+
+
+/*
+box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+*/
+
+
+
+.expertise-background {
+  position: absolute; 
+  top: 3rem; 
+  left: 0;
+  right: 0;
+  height: 20em; 
+
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+
+
+
+
+.expertise-section{
+  position:relative;
+  margin-bottom: 6em;
+}
+
+
+
 
 
 
@@ -205,26 +284,17 @@ padding-left: 15px;
   margin:40px;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-bottom: 50px;
-}
 
-.project {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  align-items: center;
-}
+
+
 
 .project:nth-child(even) {
   grid-template-columns: 1fr 1fr;
 }
 
 .project img {
-  width: 100%;
+  width: 80%;
+  margin-bottom: 30px;
 }
 
 .project-text {
@@ -269,6 +339,7 @@ padding-left: 15px;
 
 /*footer*/
 footer{
+ 
   background-color: #E76F51;
 }
 footer li{
@@ -279,7 +350,9 @@ footer li{
 footer ul{
   display:flex;
   text-align: center;
+  align-items: center;
   justify-content: center;
+  height:100px;
   
 }
 
@@ -295,6 +368,52 @@ footer a:hover {
 /*aboutus*/
 .my-timeline{
   width:100%;
+}
+
+.aboutme-grid-text h1{
+line-height:1.3em;
+font-size: 42px;
+margin-bottom: 20px;
+}
+
+.my-journey{
+  background-color: #E76F51;
+  color:#fff;
+  padding: 30px 50px 70px 50px;
+  margin:0;
+  margin-left: -170px;
+  margin-right: -170px;
+
+}
+
+.my-journey-text{
+  text-align: center;
+  margin:7em;
+}
+
+.my-journey-text p{
+  text-align: left;
+}
+
+.my-journey-image{
+  margin: auto;
+}
+
+.education-text p {
+margin-bottom: 0;
+text-align: center;
+}
+
+.education{
+  margin-top:6em;
+}
+
+.education-image{
+  margin:auto;
+}
+
+.education-text p:nth-of-type(2n) {
+  margin-bottom: 30px;
 }
 
 /*work*/
@@ -340,6 +459,56 @@ footer a:hover {
 
 .message{
   width:100%;
+}
+
+
+
+.modal-image img{
+  width:25em;
+  margin: auto;
+}
+
+.modal-image{
+  margin:5em;
+}
+
+.modal-text{
+  margin:auto;
+}
+
+.modal-visit-button{
+  width:150px;
+  height:30px;
+  background-color: #333;
+
+}
+
+.modal-visit-button{
+  width:150px;
+  height:45px;
+  background-color: #333;
+  border-radius: 10px;
+
+}
+
+.modal-visit-button:hover{
+  background-color: #E76F51;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.modal a{
+  color:#fff;
+  text-decoration: none;
 }
 
 /*contact*/
