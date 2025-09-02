@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const projects = [
   {
     src:"/img/boom-radio-thumbnail.png",
@@ -5,7 +7,7 @@ const projects = [
     url:"https://boom-radio.vercel.app/", 
     projectTitle:"Boom Radio",
     projectDescription: {
-      en: "Website prototype for TAFE radio students. Future plan: integrate podcasts with WordPress",
+      en: "Website prototype for TAFE radio students. This website is itegrated in Wordpress",
       ja: "このプロジェクトは、ラジオやポッドキャストを学ぶTAFEの学生向けのWebサイトです。現在はプロトタイプを作成済みで、今後WordPressを用いてポッドキャストを組み込む予定です。"
     }    
   },
@@ -16,7 +18,7 @@ const projects = [
     url:"https:japanricerealm.com", 
     projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "This website is for a rice farmer who is producing in Nabari city in Japan. And, we are targetting for foreigners. ",
+      en: "This website is for a rice farmer who is producing in Nabari city in Japan. And, we are targetting for foreigners.Used HTML, CSS, JS and PWA technology ",
       ja: "このウェブサイトのクライアントは名張市でお米を農家をしています。ターゲットオーディエンスは海外の方を想定しています。HTML, CSS, JS, PWAの技術を使って作ったWebsiteです。"
     }
   },
@@ -51,6 +53,9 @@ const projects = [
 
 export default function Project({ isJapanese }){
   return(
+    <>
+    
+    
     <section className="projects grid grid-cols-1 sm:grid-cols-2 gap-9 mb-5">
     {projects.map((project, index) => (
       <article 
@@ -71,8 +76,22 @@ export default function Project({ isJapanese }){
           </p>
         </div>
       </article>
+    
     ))}
+
   </section>
+
+  <div className="button-section flex items-center justify-center m-9">
+<button className="modal-visit-button">
+  <Link to="/work" className="rounded-lg">View all works</Link>
+</button>
+</div>
+  </>
+
+
+
+
 );
+
 }
 

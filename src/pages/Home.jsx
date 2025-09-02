@@ -49,7 +49,7 @@ gsap.registerPlugin(ScrollTrigger);
       <h2>I design code simply and beautifully!!</h2>
      
       
-      <img src="/public/img/soki-coder.gif " alt=" do coding" />
+      <img src="/img/soki-coder.gif " alt=" do coding" />
     </section>
 
       <section className="intro">

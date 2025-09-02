@@ -83,14 +83,30 @@ export default function Work(){
       image:"/img/sightseeing-map-thumbnail.png",
       alt:"Sightseeing map app preview",
       plan: {
-        en: "Make web app from scratch to cooperate with backend people. We really focus on database,UI and Login page.",
-        ja: "バックエンドチームと協力してゼロからWebアプリを作成。データベース、UI、ログインページに重点を置きました。"
+        en: "This project was a collaboration with backend developers. My role focused on frontend (Next.js, Tailwind, login UI, API fetch integration, Google Maps API) and database schema design.",
+        ja: "このプロジェクトはバックエンド開発者との協働で進めました。私の役割はフロントエンドを担当し、Next.js・Tailwind を用いたUI開発、ログイン機能、APIフェッチの実装、Google Maps APIの統合、そしてデータベーススキーマ設計を行いました。"
       },
       users: {
         en: "This app helps to find user's gem's restaurants, cafe and sightseeing spots. Users can write very detailed reviews like blog and post. They only can see spots within 30 min from current place not to disturb User Interface.",
         ja: "このアプリはユーザーが隠れたレストラン、カフェ、観光スポットを見つけるのを助けます。ユーザーはブログのように詳細なレビューを書け、現在地から30分以内のスポットのみ表示され、UIを妨げません。"
       },
       link:"https://github.com/AstromaoLabs/sightseeing-map"
+    },
+
+    {
+      title:"George Garden Center",
+      technology: "HTML, CSS, JS, Sass, Bootstrap",
+      image:"/img/bootstrap-thumbnail.png",
+      alt:"george garden center website's appearence",
+      plan: {
+        en: "In this project, it is used Bootstrap technology especially. I managed to implement carousel and grid style in the website. Also, in the contact form, you can see stylish type of selecting form.",
+        ja: "このプロジェクトはバックエンド開発者との協働で進めました。私の役割はフロントエンドを担当し、Next.js・Tailwind を用いたUI開発、ログイン機能、APIフェッチの実装、Google Maps APIの統合、そしてデータベーススキーマ設計を行いました。"
+      },
+      users: {
+        en: "Client is a george garden center. This corporation is a gardening shop and selling a variety of products. They want to show users different type of products on product page. Also, it is essential to introduce carousel.",
+        ja: "クライアントは George Garden Center です。この企業はガーデニングショップで、さまざまな製品を販売しています。ユーザーに向けて、製品ページで異なる種類の商品を見せたいと考えており、カルーセルの導入が不可欠となっています。"
+      },
+      link:"https://sochan2.github.io/george-garden/"
     }
 
 
