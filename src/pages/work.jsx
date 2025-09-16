@@ -63,18 +63,18 @@ export default function Work(){
 
     {
       title:"Boom Radio",
-      technology: "HTML, CSS, JS, React, Tailwind css",
+      technology: "WordPress (PHP), HTML5, CSS3, JavaScript (ES6+), Bootstrap, Git/GitHub",
       image:"/img/boom_radio.png",
       alt:"Boom Radio project preview",
       plan: {
-        en: "We focused on UI and UX design to ensure the menu remains clean and user-friendly on mobile. Also, we include great functions such as live playing and retrieve latest potcast episode from Spotify and able to listen on website.",
+        en: "Key features include live radio streaming and Spotify integration, which automatically retrieves and plays the latest podcast episodes on the website. My role was designing Wireframe, custom post types to manage content and github management",
         ja: "UI/UXデザインに重点を置き、モバイルでもメニューが見やすくユーザーフレンドリーになるよう設計。また、ライブ再生やSpotifyから最新のポッドキャストを取得してウェブ上で聴ける機能も実装しました。"
       },
       users: {
         en: "This is real client project. Target audience is students age who lives in Perth. They try to spread a community in Perth",
         ja: "実際のクライアントプロジェクト。ターゲットはパース在住の学生で、コミュニティを広げることを目的としています。"
       },
-      link:"https://boom-radio.vercel.app/"
+      link:"https://github.com/Sochan2/boom-radio-wordpress"
     },
 
     {
