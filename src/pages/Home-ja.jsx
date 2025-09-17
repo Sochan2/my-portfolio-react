@@ -47,21 +47,100 @@ gsap.registerPlugin(ScrollTrigger);
     <section className="about_me" ref={aboutRef}>
      
       <h1 className="">Webデザインと開発で、体験をもっとシンプルに</h1>
-      <h2>見やすく・使いやすいーそんなWebsiteをつくります</h2>
-     
+      <h2>見やすく・使いやすい。そんなWebsiteをつくります</h2>
       
       <img src="img/portfolio_home.gif " alt=" do coding" />
     </section>
 
       <section className="intro">
-        <h2>About me</h2>
+      <section className="expertise-section">
+        <h2>My Expertise</h2>
+        <div className="expertise-background"></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 expertise-grid ">
+          <div className="design-section p-6 m-3 shadow-md">
+          <img className="expertise-logo" src="/img/design-logo.png" alt="design logo picture with orange color" />
+          <h3>Design</h3>
 
-        <p><strong>初めまして。Sokiです</strong> パースを拠点に活動しているフロントエンドエンジニアです。<br/>
-         2023年からWeb開発の世界に入り、CertificateIVで基礎を学び、オーストラリアのNorthbridgeTAFEでDiplomaコースを卒業しました。
-        </p>
-       <p>ReactやJavaScriptを中心に、モダンで使いやすいUI/UXを意識したWebサイトやアプリを制作しています。</p>
+          <p>
+            シンプルなデザインをモットーとしています。常にクリーンでユーザーにとって直感的でわかりやすいデザインを心がけています。 </p>
+          <p><strong>自分のデザインの強み</strong></p> <ul>
+            <li>UX, UI</li>
+            <li>ワイヤーフレームとモックアップ</li>
+            <li>カラーパレット</li>
+            
+          </ul>
+
+          <p><strong>ツール</strong></p>
+          <ul>
+            <li>Figma</li>
+            <li>Draw.io</li>
+            <li>Canva</li>
+          </ul>
+
+
+          </div>
+
+          <div className="development p-6 shadow-md m-3">
+          <img className="expertise-logo" src="/img/development-logo.png" alt="design logo picture with orange color" />
+          <h3>Development</h3>
+          <p>
+            チームで作るためにクリーンでわかりやすいコード、さらにスケーラビリティしやすいコードを心がけています。
+        
+          </p>
+          <p><strong>私の技術</strong></p>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React,Next.js</li>
+            <li>basic typescript, PHP and MySQL</li>
+            <li>Sass</li>
+            <li>Wordpress</li>
+             <li>Github メンテナンス</li>
+            
+          </ul>
+
+          <p><strong>Tool</strong></p>
+          <ul>
+            <li>Tailwind</li>
+            <li>Bootstrap</li>
+            <li>VS code</li>
+            <li>GitHub</li>
+          </ul>
+
+          </div>
+
+          <div className="marketing p-6 shadow-md m-3">
+          <img className="expertise-logo" src="/img/marketing-logo.png" alt="design logo picture with orange color" />
+          <h3>マーケティング</h3>
+          <p>
+            ユーザーのニーズを理解し、彼らの行動を分析、それらの視点をSEO戦略に反映させます。 </p>
+          <p><strong>取り組む分析</strong></p>
+          <ul>
+            <li>ペルソナ</li>
+            <li>セグメンテーション</li>
+            <li>マーケットリサーチ</li>
+            <li>ABテスト</li>
+          </ul>
+
+          <p><strong>Tool</strong></p>
+          <ul>
+            <li>Google Analytics</li>
+            <li>Google Search Console</li>
+            <li>Keyword Planner</li>
+          </ul>
+
+          </div>
+          
+      
+     
+
+        </div>
+        </section>
+
+       
+
+
+  
       </section>
-      <Skills />
       <h2>Project</h2>
       <Project isJapanese={isJapanese} />
       </main>

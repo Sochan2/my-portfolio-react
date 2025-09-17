@@ -90,9 +90,15 @@ gsap.registerPlugin(ScrollTrigger);
           </p>
           <p><strong>What I will write code</strong></p>
           <ul>
-            <li>UX, UI</li>
-            <li>Wireframe and Mockup</li>
-            <li>Color palletes</li>
+            <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React,Next.js</li>
+            <li>basic typescript, PHP and MySQL</li>
+            <li>Sass</li>
+            <li>Wordpress</li>
+             <li>Github maintenance</li>
+            
+          </ul>
             
           </ul>
 

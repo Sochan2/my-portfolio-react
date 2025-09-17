@@ -6,40 +6,45 @@ export default function AboutUsJa(){
     <>
     <Header />
     <main>
-    <section class="about_me">
-     
-     <h1>初めまして。Sokiです。</h1>
-     
-     <p>私はフロントエンドWeb developerで、情熱的な方達と働きたいと思っています。私のこのポートフォリオは毎年進化をしており、日々学習する知識や最新の技術を
-       活用して日々アップデートを重ねています。 <br /> <br />
-       
-       私の今までの道のりを少し紹介すると...
-       大学であーケティングとWebmarketingを学んだ後、「もっと専門的で技術的なスキルを身に付けたい」さらに、当時ブログを運営していたこともあり、デザインをもっと凝ったものにしたいが、
-       自分で変える知識がなかったので、Webdevelopmentを勉強したいと思い、さらに英語も同時に学べるということで、西オーストラリアのTAFEに入学しました。Webdevelopment Certificate IVを取得し、現在は
-       Webdevelopment Frontend のDiplomaコースをも取得しました。 <br /> <br />
+    <section class="about_me grid grid-cols-1 md:grid-cols-2 gap-8 gap-4 ">
 
-       
-       私はこの経験から、クライアントとの円滑なコミュニケーションスキル、英語でのClient workの実践、プロジェクト管理能力、さらにデザインやコーディングのスキルを身につけ、プロフェショナルなWeb developer
-       として活躍したいと思っています。
-       コーディング以外では、私はテニスをしたり、自然の中でリフレッシュしたりするのが大好きで、常に新しい発見を大切にしています。
-      </p>
+      <div className = "aboutme-grid-text text-center ">
+      <p>私のプロフィール</p>
+     <h1>ユーザー体験を大切にするWebデベロッパー</h1> <p>私はフロントエンドエンジニアとして、レスポンシブでユーザーフレンドリーなウェブサイトやアプリの開発を得意としています。Reactをはじめとするモダンなツールと、HTML・CSS・JavaScriptといった基礎技術を活かし、直感的でユーザー中心のデジタル体験を提供することに情熱を持っています。</p> </div>
+
+      <div className = "aboutme-grid-picture">
+        <img src= "/img/aboutme-hero.png"></img>
+      </div>
    </section>
-     
-   
 
-   
+   <section className = "my-journey grid grid-cols-1 md:grid-cols-2">
+       <div className = "my-journey-image">
+         <img src = "/img/journey.png"></img>
+       </div>
 
-   <img class="my-timeline" src="/img/my-skill.png" alt="my timelice picture. My brief history as website development."/>
+       <div className="my-journey-text  ">
+       <h2></h2>私のストーリー <p>私は近畿大学で経営学やマーケティングを学び、デジタルプラットフォームが企業と人々のつながり方をどのように変えているかについて理解を深めました。そこから興味が広がり、WebマーケティングやWeb開発に触れる中で、デジタル体験を支える技術面に強い関心を持つようになりました。<br></br><br></br>
+      その関心をきっかけに大きな一歩を踏み出し、大学卒業後はオーストラリアに渡り、Web開発の道に進むことを決意しました。パースのTAFEで学び、HTML・CSS・JavaScript・Reactといった基礎からモダンな技術までしっかりと習得。単にコードを書く力だけでなく、コミュニケーション力やチームワークの大切さも身につけました。
+      ビジネスとテクノロジーの両方の背景を持つことで、ユーザーの本当のニーズに応えるデジタル体験を提供できるのが私の強みです。
+<br></br><br></br>さらに、テニスコーチとしての経験を通じて、相手に合わせた柔軟な対応力とわかりやすい伝え方を培いました。
+       </p>
+       </div>
+    
+   </section>
 
 
+   <section className = "education grid grid-cols-1 md:grid-cols-2">
+       <div className = "education-image">
+         <img src = "/img/education.png"></img>
+       </div>
 
-<section class="policy">
- <h2>My Policy</h2>
- <p>私たちは、透明性・創造性・信頼を大切にしながら、高品質なサービスをお届けいたします。これらのコアバリューを大切にしています。</p>
-<p>「今何をしているの」「次はどんなステップ」そんな疑問にお答えできるよう、オープンなコミュニケーションを心がけています。初期プランニングから最終的な完成まで、プロセス全体を分かりやすくお伝えし、安心してお任せいただけるよう努めています。</p>
-<p>でも、私たちの仕事はウェブサイトを作って終わりではありません。その後のメンテナンス、SEO対策への最適化、そして収益向上のための改善提案まで、長期的なパートナーとしてサポートさせていただきます。</p>
-
- </section>
+       <div className="education-text ">
+       <h2>Education</h2>
+       <p><strong>TAFE Web開発 フロントエンド ディプロマ  </strong>/ 2025</p>
+       <p>Sass、Wordpress、React他にリアルクライアントワークを通じてチームでの開発を実際に行った。</p> 
+       <p><strong>TAFE 情報技術 Web開発 サーティフィケートIV</strong>  / 2024</p> <p>HTML・CSS・JavaScript・Web標準の基礎を習得。さらにWCAGを学び、アクセサビリティーを重視したウェブサイトについても学習</p> 
+       <p><strong>近畿大学 経営学部　キャリアマネージメント学科  学士 </strong>/ 2023 </p> <p> 経営マネージメント、マーケティング。主に海外ビジネスやInternational marketingについて研究を行った</p> </div>
+   </section>
 
 </main>
 

@@ -8,7 +8,7 @@ const projects = [
     projectTitle:"Boom Radio",
     projectDescription: {
       en: "Website prototype for TAFE radio students. This website is itegrated in Wordpress",
-      ja: "このプロジェクトは、ラジオやポッドキャストを学ぶTAFEの学生向けのWebサイトです。現在はプロトタイプを作成済みで、今後WordPressを用いてポッドキャストを組み込む予定です。"
+      ja: "このプロジェクトは、ラジオやポッドキャストを学ぶTAFEの学生向けのWebサイトです。現在はプロトタイプを作成済みで、さらにWordPressを用いてポッドキャストを組み込んだり、クライアント自身が自分でコンテンツをアップロードできる仕組みを整えました。"
     }    
   },
 
@@ -18,8 +18,8 @@ const projects = [
     url:"https:japanricerealm.com", 
     projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "This website is for a rice farmer who is producing in Nabari city in Japan. And, we are targetting for foreigners.Used HTML, CSS, JS and PWA technology ",
-      ja: "このウェブサイトのクライアントは名張市でお米を農家をしています。ターゲットオーディエンスは海外の方を想定しています。HTML, CSS, JS, PWAの技術を使って作ったWebsiteです。"
+      en: "This website is for a rice farmer who is producing in Nabari city in Japan. And, our target audience is foreigners. I have not implemented payment system though, it is considered accessibility. This website is Used HTML, CSS, JS and PWA technology ",
+      ja: "このウェブサイトのクライアントは名張市でお米農家をしています。ターゲットオーディエンスは海外の方を想定してお米を売るためのプラットフォームです。まだ決済機能は搭載していませんが、アクセシビリティーに配慮したHTML, CSS, JS, PWAの技術を使って作ったWebsiteです。"
     }
   },
 
@@ -29,10 +29,8 @@ const projects = [
     url:"https:japanricerealm.com", 
     projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "This is a plant shop website and used sass and bootstrap technique ",
-      ja: "このウェブサイトはお花ショップのウェブサイトで、BootstrapとSassのスキルを使って作っています"
-    }
-  },
+      en: "This is a plant shop website and used sass and bootstrap technique. It is Expecting real client, George garden center and created. ",
+      ja: "このウェブサイトはお花ショップのウェブサイトで、BootstrapとSassのスキルを使って作っています。ジョージガーデンセンターというフラワーショップを想定してクライアントが欲しいファンクションを組み込んでいるウェブサイトです。" } },
 
   {
     src:"/img/onering-rental-thumbnail.png",

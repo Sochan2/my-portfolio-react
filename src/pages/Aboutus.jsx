@@ -11,7 +11,7 @@ export default function AboutUs(){
       <div className = "aboutme-grid-text text-center ">
       <p>About Me Little</p>
      <h1>User-Centric Frontend Development</h1>
-     <p>I am Soki, who is a frontend developer specialising in building responsive, user-friendly websites and apps. My passion is building responsive websites and apps. I use React and modern tools to create intuitive digital experiences.</p>
+     <p>I am Soki, who is a frontend developer specializing in building responsive, user-friendly websites and apps. With a strong foundation in HTML, CSS, and JavaScript, along with modern tools like React, I am passionate about creating intuitive and engaging digital experiences.</p>
       </div>
 
       <div className = "aboutme-grid-picture">
