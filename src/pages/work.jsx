@@ -107,7 +107,24 @@ export default function Work(){
         ja: "クライアントは George Garden Center です。この企業はガーデニングショップで、さまざまな製品を販売しています。ユーザーに向けて、製品ページで異なる種類の商品を見せたいと考えており、カルーセルの導入が不可欠となっています。"
       },
       link:"https://sochan2.github.io/george-garden/"
+    },
+
+     {
+      title:"Typescript and React Weather App",
+      technology: "React, Typescript, OpenWeather API",
+      image:"/img/weather-app.png",
+      alt:"weather app preview",
+      plan: {
+        en: "In this project, I focused on building a weather application using React and Typescript. I integrated the OpenWeather API to fetch weather data and display it as a user-friendly interface.",
+        ja: "このプロジェクトでは、React と Typescript を使用して天気アプリケーションを構築しました。OpenWeather API を統合して天気データを取得し、ユーザーフレンドリーな方法で表示しました。" },
+      users: {
+        en: "This app provides information to local weather. It provides the location, temperatures, humidity, air pressure, wind speed, sunrise and sunset information. Also, I implemented weather forecasts every 6 hours.",
+        ja: "このアプリはローカルの天気情報を表示するアプリです。位置情報、気温、湿度、気圧、風速、日の出と日の入りの情報を提供します。また、6時間ごとの天気予報も実装しました。"
+      },
+      link:"https://react-app-sage-nine.vercel.app/"
     }
+
+     
 
 
   ]
