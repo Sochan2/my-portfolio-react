@@ -12,6 +12,11 @@ export default function Work(){
   const projects = [
     {
       title:"Japan rice",
+      where: {"en": "TAFE school project", 
+              "ja": "TAFE学校プロジェクト"
+            },
+
+
       technology: "HTML, CSS, PWA",
       image:"/img/japan_rice_homepage.jpg",
       alt:"Japan rice MICO website preview picture",
@@ -30,6 +35,9 @@ export default function Work(){
 
     {
       title:"One Ring Rental",
+       where: {"en": "TAFE school project", 
+              "ja": "TAFE学校プロジェクト"
+            },
       technology: "React, Bootstrap, Next.js",
       image:"/img/react_work.png",
       alt:"One ring rental thumbnail picture",
@@ -47,6 +55,8 @@ export default function Work(){
 
     {
       title:"Generate Password",
+       where: {"en": "Individual project", 
+              "ja": "Javascriptを使った個人プロジェクト" },
       technology: "HTML, CSS, JS",
       image:"/img/generate-password-site.png",
       alt:"generate password site preview",
@@ -63,13 +73,15 @@ export default function Work(){
 
     {
       title:"Boom Radio",
+       where: {"en": "TAFE school project", 
+              "ja": "TAFE学校プロジェクト"
+            },
       technology: "WordPress (PHP), HTML5, CSS3, JavaScript (ES6+), Bootstrap, Git/GitHub",
       image:"/img/boom_radio.png",
       alt:"Boom Radio project preview",
       plan: {
         en: "Key features include live radio streaming and Spotify integration, which automatically retrieves and plays the latest podcast episodes on the website. My role was designing Wireframe, custom post types to manage content and github management",
-        ja: "UI/UXデザインに重点を置き、モバイルでもメニューが見やすくユーザーフレンドリーになるよう設計。また、ライブ再生やSpotifyから最新のポッドキャストを取得してウェブ上で聴ける機能も実装しました。"
-      },
+        ja: "UI/UXデザインに重点を置き、モバイルでもメニューが見やすくユーザーフレンドリーになるよう設計。また、ライブ再生やSpotifyから最新のポッドキャストを取得してウェブ上で聴ける機能も実装しました。現在はクライアントの都合上公開されてませんが、ローカル環境で再現できます。" },
       users: {
         en: "This is real client project. Target audience is students age who lives in Perth. They try to spread a community in Perth",
         ja: "実際のクライアントプロジェクト。ターゲットはパース在住の学生で、コミュニティを広げることを目的としています。"
@@ -77,24 +89,13 @@ export default function Work(){
       link:"https://github.com/Sochan2/boom-radio-wordpress"
     },
 
-    {
-      title:"Sightseeing map app",
-      technology: "Next.js, Tailwind css, Python, Django, MongoDB, Google map API",
-      image:"/img/sightseeing-map-thumbnail.png",
-      alt:"Sightseeing map app preview",
-      plan: {
-        en: "This project was a collaboration with backend developers. My role focused on frontend (Next.js, Tailwind, login UI, API fetch integration, Google Maps API) and database schema design.",
-        ja: "このプロジェクトはバックエンド開発者との協働で進めました。私の役割はフロントエンドを担当し、Next.js・Tailwind を用いたUI開発、ログイン機能、APIフェッチの実装、Google Maps APIの統合、そしてデータベーススキーマ設計を行いました。"
-      },
-      users: {
-        en: "This app helps to find user's gem's restaurants, cafe and sightseeing spots. Users can write very detailed reviews like blog and post. They only can see spots within 30 min from current place not to disturb User Interface.",
-        ja: "このアプリはユーザーが隠れたレストラン、カフェ、観光スポットを見つけるのを助けます。ユーザーはブログのように詳細なレビューを書け、現在地から30分以内のスポットのみ表示され、UIを妨げません。"
-      },
-      link:"https://github.com/AstromaoLabs/sightseeing-map"
-    },
+    
 
     {
       title:"George Garden Center",
+       where: {"en": "TAFE school project", 
+              "ja": "TAFE学校プロジェクト"
+            },
       technology: "HTML, CSS, JS, Sass, Bootstrap",
       image:"/img/bootstrap-thumbnail.png",
       alt:"george garden center website's appearence",
@@ -111,6 +112,8 @@ export default function Work(){
 
      {
       title:"Typescript and React Weather App",
+        where: {"en": "Individual project", 
+              "ja": "ReactとTypescriptを使った個人プロジェクト" },
       technology: "React, Typescript, OpenWeather API",
       image:"/img/weather-app.png",
       alt:"weather app preview",

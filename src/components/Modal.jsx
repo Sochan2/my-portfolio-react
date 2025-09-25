@@ -14,6 +14,10 @@ return(
 
       <div className="modal-text">
       <h2 className="text-xl font-bold mb-4">{project.title}</h2>
+
+       <p className="text-sm mb-1">
+          <strong>Where:</strong> {project.where[isJapanese ? "ja" : "en"]}
+        </p>
         <p className="text-sm mb-1">
           <strong>Technology:</strong> {project.technology}
         </p>

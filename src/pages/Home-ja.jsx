@@ -72,9 +72,9 @@ gsap.registerPlugin(ScrollTrigger);
 
           <p><strong>ツール</strong></p>
           <ul>
-            <li>Figma</li>
-            <li>Draw.io</li>
-            <li>Canva</li>
+            <li>Figma(2年)</li>
+            <li>Draw.io(1年)</li>
+            <li>Canva(3年)</li>
           </ul>
 
 
@@ -100,10 +100,10 @@ gsap.registerPlugin(ScrollTrigger);
 
           <p><strong>Tool</strong></p>
           <ul>
-            <li>Tailwind</li>
-            <li>Bootstrap</li>
-            <li>VS code</li>
-            <li>GitHub</li>
+            <li>Tailwind（1年）</li>
+            <li>Bootstrap（1年）</li>
+            <li>VS code（2年）</li>
+            <li>GitHub（2年）</li>
           </ul>
 
           </div>
