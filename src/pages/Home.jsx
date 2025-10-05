@@ -54,11 +54,17 @@ gsap.registerPlugin(ScrollTrigger);
 
       <section className="intro">
       <section className="expertise-section">
-        <h2>My Expertise</h2>
-        <div className="expertise-background"></div>
+
+           <h2>My Expertise</h2>
+      
+       
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 expertise-grid ">
           <div className="design-section p-6 m-3 shadow-md">
-          <img className="expertise-logo" src="/img/design-logo.png" alt="design logo picture with orange color" />
+            <div className="image-flex">
+                <img className="expertise-logo" src="/img/design-logo.png" alt="design logo picture with orange color" />
+            </div>
+        
           <h3>Design</h3>
 
           <p>
@@ -83,7 +89,9 @@ gsap.registerPlugin(ScrollTrigger);
           </div>
 
           <div className="development p-6 shadow-md m-3">
-          <img className="expertise-logo" src="/img/development-logo.png" alt="design logo picture with orange color" />
+             <div className="image-flex">
+               <img className="expertise-logo" src="/img/development-logo.png" alt="design logo picture with orange color" />
+             </div>
           <h3>Development</h3>
           <p>
           I write clean and understandable code that is easy for teams to work together and maintain. 
@@ -113,7 +121,9 @@ gsap.registerPlugin(ScrollTrigger);
           </div>
 
           <div className="marketing p-6 shadow-md m-3">
-          <img className="expertise-logo" src="/img/marketing-logo.png" alt="design logo picture with orange color" />
+             <div className="image-flex">
+                <img className="expertise-logo" src="/img/marketing-logo.png" alt="design logo picture with orange color" />
+             </div>
           <h3>Marketing</h3>
           <p>
           I value understanding user needs. I analyse user behaviour and apply those insights to SEO strategies to improve engagement.          </p>

@@ -125,7 +125,24 @@ export default function Work(){
         ja: "このアプリはローカルの天気情報を表示するアプリです。位置情報、気温、湿度、気圧、風速、日の出と日の入りの情報を提供します。また、6時間ごとの天気予報も実装しました。"
       },
       link:"https://react-app-sage-nine.vercel.app/"
+    },
+
+     {
+      title:"Online fitness platform LP ( Japanese) ",
+        where: {"en": "Individual project", 
+              "ja": "HTML, CSS, JSを使ったLP" },
+      image:"/img/online-fitness-lp.png",
+      alt:"online fitness lp website ",
+      plan: {
+        en: "In this project, I focused on building a online fitness LP in Japanese. I mainly focused on design. I always consider how users will register button and makes increase impressions.",
+        ja: "このプロジェクトでは、オンラインフィットネスアプリのLPのウェブサイトを作りました。デザインに重きを置き、リスポンシブルデザインを考えコードに落とし込みました。常にユーザーがボタンをクリックし、インプレッションが上がるよう工夫をしました。" },
+      users: {
+        en: "This LP provides information about online fitness application promotion. In this app, you can watch video and do fitness, get nutrition information, deliver supplements.",
+        ja: "このLPでは、オンラインフィットネスアプリをプロモーションしています。ユーザーはビデオを見て、フィットネスを一緒にし、また栄養に関するアドバイスを受け、サプリメントの配達のサービスも受けられます。" },
+      link:"https://sochan2.github.io/online-fitness-lp/"
     }
+
+
 
      
 
