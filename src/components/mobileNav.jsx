@@ -1,6 +1,6 @@
 import React from 'react';
 import NavLinks from './navLinks';
-import {MdOutlineMenu} from 'react-icons/md';
+import {MdOutlineMenu, MdClose } from 'react-icons/md';
 import { useState } from "react";
 
 
@@ -12,12 +12,24 @@ export default function MobileNav({ isJapanese}){
 
   return(
     <nav className="mobile-navigation">
-      <MdOutlineMenu
-        className={`HamburgerMenu ${click ? "active" : ""}`}
-        size="30px"
-        color="black"
-        onClick={() => setClick(!click)}
-      />
+      {click ? (
+
+      <MdClose
+      className="HamburgerMenu"
+      size="30px"
+      color="black"
+      onClick={() => setClick(false)}
+    />
+      ):(
+          <MdOutlineMenu
+          className="HamburgerMenu"
+          size="30px"
+          color="black"
+          onClick={() => setClick(true)}
+        />
+
+      )}
+     
       <div className={`nav-menu ${click ? "active" : ""}`}>
       {click && (isJapanese ? <NavLinksJa /> : <NavLinks />)}
       </div>

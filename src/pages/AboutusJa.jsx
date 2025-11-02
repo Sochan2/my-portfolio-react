@@ -33,6 +33,7 @@ export default function AboutUsJa(){
    </section>
 
 
+
    <section className = "education grid grid-cols-1 md:grid-cols-2">
        <div className = "education-image">
          <img src = "/img/education.png"></img>

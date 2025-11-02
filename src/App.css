@@ -722,6 +722,12 @@ margin-bottom: 30px;
 
 @media(max-width:760px){
 
+  header{
+    margin:10px;
+  }
+
+ 
+
   main{
     margin:0;
   }
@@ -758,6 +764,7 @@ height:30px;
 
   h2{
     font-size:1.3rem;
+    text-align: center;
   }
  
   .hamberger{
