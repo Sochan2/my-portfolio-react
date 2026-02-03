@@ -13,16 +13,16 @@ const projects = [
   },
 
   {
-    src:"/img/mi-co-farm-thumbnail.png",
+    src:"/img/artwork.png",
     alt:"Sightseeing Map project top imagee",
     url:"https:japanricerealm.com", 
     projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "This website is for a rice farmer who is producing in Nabari city in Japan. And, our target audience is foreigners. I have not implemented payment system though, it is considered accessibility. This website is Used HTML, CSS, JS and PWA technology ",
-      ja: "このウェブサイトのクライアントは名張市でお米農家をしています。ターゲットオーディエンスは海外の方を想定してお米を売るためのプラットフォームです。まだ決済機能は搭載していませんが、アクセシビリティーに配慮したHTML, CSS, JS, PWAの技術を使って作ったWebsiteです。"
-    }
+      en: "This project is a web application with Next.js, supabase and Django backend. The client of this site will have SNS function to share their artworks each other.",
+      ja: "このプロジェクトは、Next.js、Supabase、Djangoバックエンドを使用したWebアプリケーションです。このサイトのクライアントは、アートワークをお互いに共有するためのSNS機能を持つ予定です。"
+    }    
   },
-
+    
   {
     src:"/img/bootstrap-thumbnail.png",
     alt:"george garden center website using bootstrap",
@@ -31,17 +31,6 @@ const projects = [
     projectDescription: {
       en: "This is a plant shop website and used sass and bootstrap technique. It is Expecting real client, George garden center and created. ",
       ja: "このウェブサイトはお花ショップのウェブサイトで、BootstrapとSassのスキルを使って作っています。ジョージガーデンセンターというフラワーショップを想定してクライアントが欲しいファンクションを組み込んでいるウェブサイトです。" } },
-
-  {
-    src:"/img/onering-rental-thumbnail.png",
-    alt:"george garden center website using bootstrap",
-    url:"https:japanricerealm.com", 
-    projectTitle:"Japan Rice Mico ",
-    projectDescription: {
-      en: "This is a property rental web app  and used react.js and HTML skills. ",
-      ja: "これは不動産のレンタルウェブアプリで、ReactとHTMLを使って作っています。"
-    }
-  }
 
 
 
@@ -60,7 +49,7 @@ export default function Project({ isJapanese }){
         key={index} 
         className="relative group overflow-hidden rounded-lg"
       >
-        {/* サムネイル画像 */}
+   
         <img
           src={project.src}
           alt={project.alt}

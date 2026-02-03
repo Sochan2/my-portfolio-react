@@ -31,26 +31,6 @@ export default function Work(){
       link:"https://sochan2.github.io/japanese-rice/"
 
     },
-
-
-    {
-      title:"One Ring Rental",
-       where: {"en": "TAFE school project", 
-              "ja": "TAFE学校プロジェクト"
-            },
-      technology: "React, Bootstrap, Next.js",
-      image:"/img/react_work.png",
-      alt:"One ring rental thumbnail picture",
-      plan: {
-        en: "Change the website from HTML to React and Next.js. As a CSS, I installed bootstrap. Also, make counting sculpture list. In order  to make it, used useState. More important things of this web app is changing from all HTML and CSS website to React and Next.js",
-        ja: "HTMLからReactとNext.jsへサイトを変更。CSSにはBootstrapを使用。また、カウント可能なスカルプチャリストを作成するためにuseStateを使用。このWebアプリで最も重要なのは、HTMLとCSSだけのサイトをReactとNext.jsに移行したことです。"
-      },
-      users: {
-        en: "This is just a template property rental web app website.",
-        ja: "これはテンプレートの不動産レンタルWebアプリです。"
-      },
-      link:"https://my-react-2xddgjhxe-sochan2s-projects.vercel.app/"
-    },
   
 
     {
@@ -128,18 +108,19 @@ export default function Work(){
     },
 
      {
-      title:"Online fitness platform LP ( Japanese) ",
-        where: {"en": "Individual project", 
-              "ja": "HTML, CSS, JSを使ったLP" },
-      image:"/img/online-fitness-lp.png",
-      alt:"online fitness lp website ",
+      title:" Artwork Project",
+        where: {"en": "Collaborative Team Project", 
+              "ja": "共同プロジェクト" },
+      technology: "Typescript, Next.js, Tailwind CSS, Django and Supabase",
+      image:"/img/artwork.png",
+      alt:"artwork sharing website ",
       plan: {
-        en: "In this project, I focused on building a online fitness LP in Japanese. I mainly focused on design. I always consider how users will register button and makes increase impressions.",
-        ja: "このプロジェクトでは、オンラインフィットネスアプリのLPのウェブサイトを作りました。デザインに重きを置き、リスポンシブルデザインを考えコードに落とし込みました。常にユーザーがボタンをクリックし、インプレッションが上がるよう工夫をしました。" },
+        en: "Deep thinking about UI/UX design and database structure. My role is frontend development using Next.js and Tailwind CSS. Also,integrated frontend with REST API built by backend engineer",
+        ja: "UI/UXデザインとデータベース構造について深く考えました。Next.js と Tailwind CSS を使用したフロントエンド開発を担当し、バックエンドエンジニアが作成した REST API との統合も行いました。" },
       users: {
-        en: "This LP provides information about online fitness application promotion. In this app, you can watch video and do fitness, get nutrition information, deliver supplements.",
-        ja: "このLPでは、オンラインフィットネスアプリをプロモーションしています。ユーザーはビデオを見て、フィットネスを一緒にし、また栄養に関するアドバイスを受け、サプリメントの配達のサービスも受けられます。" },
-      link:"https://sochan2.github.io/online-fitness-lp/"
+        en: "Uses will cheer up painters and can interact so closely. They can share their artworks, purchase products and get feedback from other users.",
+        ja: "このプロジェクトでは、アートワークを共有、他のユーザーからフィードバックを得られるプラットフォームを提供します。" },
+       link:"https://github.com/AstromaoLabs-V2/artlift"
     }
 
 
