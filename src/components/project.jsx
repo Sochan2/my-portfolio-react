@@ -7,8 +7,8 @@ const projects = [
     url:"https://boom-radio.vercel.app/", 
     projectTitle:"Boom Radio",
     projectDescription: {
-      en: "Website prototype for TAFE radio students. This website is itegrated in Wordpress",
-      ja: "このプロジェクトは、ラジオやポッドキャストを学ぶTAFEの学生向けのWebサイトです。現在はプロトタイプを作成済みで、さらにWordPressを用いてポッドキャストを組み込んだり、クライアント自身が自分でコンテンツをアップロードできる仕組みを整えました。"
+      en: "Community radio platform for Perth-based students, built on WordPress with live streaming and Spotify integration that auto-pulls the latest podcast episodes.Designed wireframes in Figma, built custom post types for content management, and handled GitHub version control throughout the project.",
+      ja: "このプロジェクトは、パースを拠点とする学生のためのコミュニティラジオプラットフォームで、WordPressをベースに構築され、ライブストリーミングとSpotify統合が特徴です。最新のポッドキャストエピソードを自動的に取得します。Figmaでワイヤーフレームを設計し、コンテンツ管理のためのカスタム投稿タイプを構築し、プロジェクト全体でGitHubバージョン管理を担当しました。"
     }    
   },
 
@@ -18,8 +18,8 @@ const projects = [
     url:"https:japanricerealm.com", 
     projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "This project is a web application with Next.js, supabase and Django backend. The client of this site will have SNS function to share their artworks each other.",
-      ja: "このプロジェクトは、Next.js、Supabase、Djangoバックエンドを使用したWebアプリケーションです。このサイトのクライアントは、アートワークをお互いに共有するためのSNS機能を持つ予定です。"
+      en: "Art community platform built for painters to share work, sell products, and get real feedback — without the noise of mainstream social media. Built with Next.js + Supabase + Django REST API.",
+      ja: "このプロジェクトは、アートコミュニティプラットフォームで、画家が作品を共有し、製品を販売し、主流のソーシャルメディアのノイズなしで実際のフィードバックを得るために構築されました。Next.js + Supabase + Django REST APIを使用して構築されました。"
     }    
   },
     
@@ -29,8 +29,8 @@ const projects = [
     url:"https:japanricerealm.com", 
     projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "This is a plant shop website and used sass and bootstrap technique. It is Expecting real client, George garden center and created. ",
-      ja: "このウェブサイトはお花ショップのウェブサイトで、BootstrapとSassのスキルを使って作っています。ジョージガーデンセンターというフラワーショップを想定してクライアントが欲しいファンクションを組み込んでいるウェブサイトです。" } },
+      en: "E-commerce style product showcase for a local gardening business. Designed to display product variety clearly across all devices, with smooth carousel navigation.",
+      ja: "このプロジェクトは、地元の園芸ビジネス向けのEコマーススタイルの商品ショーケースです。すべてのデバイスで商品の多様性を明確に表示し、スムーズなカルーセルナビゲーションを備えています。" } },
 
 
 
@@ -56,7 +56,7 @@ export default function Project({ isJapanese }){
           className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
         />
   
-        {/* オーバーレイ（ホバーで暗くなる＋テキスト表示） */}
+    
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition duration-300 flex items-center justify-center p-4">
           <p className="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300">
             {project.projectDescription[isJapanese ? "ja" : "en"]}
