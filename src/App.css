@@ -468,6 +468,8 @@ text-align: center;
 }
 
 .modal-text{
+  max-height: 80vh;
+  overflow-y: auto;
   margin:auto;
 }
 

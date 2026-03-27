@@ -7,9 +7,8 @@ const projects = [
     url:"https://boom-radio.vercel.app/", 
     projectTitle:"Boom Radio",
     projectDescription: {
-      en: "Community radio platform for Perth-based students, built on WordPress with live streaming and Spotify integration that auto-pulls the latest podcast episodes.Designed wireframes in Figma, built custom post types for content management, and handled GitHub version control throughout the project.",
-      ja: "このプロジェクトは、パースを拠点とする学生のためのコミュニティラジオプラットフォームで、WordPressをベースに構築され、ライブストリーミングとSpotify統合が特徴です。最新のポッドキャストエピソードを自動的に取得します。Figmaでワイヤーフレームを設計し、コンテンツ管理のためのカスタム投稿タイプを構築し、プロジェクト全体でGitHubバージョン管理を担当しました。"
-    }    
+      en: "A student radio community platform based in Perth. We designed wireframes in Figma, then built with customized WordPress post types for content management, integrated spotify API to auto fetch latest podcast episodes. We mainly solved the problem that clients cannot send regular newsletter to users, watch live podcast in the browser.",
+      ja: "パースを拠点とする学生ラジオコミュニティプラットフォーム。Figmaでワイヤーフレームを設計し、カスタマイズされたWordPressの投稿タイプを使用してコンテンツ管理を行い、Spotify APIを統合して最新のポッドキャストエピソードを自動的に取得しました。私たちは主に、クライアントがユーザーに定期的なニュースレターを送信できない問題や、ブラウザでライブポッドキャストを視聴できない問題を解決しました。" }    
   },
 
   {
@@ -18,9 +17,8 @@ const projects = [
     url:"https:japanricerealm.com", 
     projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "Art community platform built for painters to share work, sell products, and get real feedback — without the noise of mainstream social media. Built with Next.js + Supabase + Django REST API.",
-      ja: "このプロジェクトは、アートコミュニティプラットフォームで、画家が作品を共有し、製品を販売し、主流のソーシャルメディアのノイズなしで実際のフィードバックを得るために構築されました。Next.js + Supabase + Django REST APIを使用して構築されました。"
-    }    
+      en: "Art community platform built for painters to share work, sell products, and get real feedback without the noise of mainstream social media. Built with Next.js + Supabase + Django REST API. We focused on UI/UX design and database structure. My role is frontend development using Next.js and Tailwind CSS. Also,integrated frontend with REST API built by backend engineer",
+      ja: "主流のソーシャルメディアのノイズなしで、画家が作品を共有し、製品を販売し、本質的なフィードバックをアーティストが得られ、将来の売買につながるようにサポートをするArtist専用のsnsプラットフォームです。このプロジェクトはNext.js + Supabase + Django REST APIで構築されました。UI/UXデザインとデータベース構造に重点を置いており、私の役割は、Next.jsとTailwind CSSを使用したフロントエンド開発です。また、バックエンドエンジニアが構築したREST APIとフロントエンドを統合しました。" }    
   },
     
   {
@@ -29,8 +27,8 @@ const projects = [
     url:"https:japanricerealm.com", 
     projectTitle:"Japan Rice Mico ",
     projectDescription: {
-      en: "E-commerce style product showcase for a local gardening business. Designed to display product variety clearly across all devices, with smooth carousel navigation.",
-      ja: "このプロジェクトは、地元の園芸ビジネス向けのEコマーススタイルの商品ショーケースです。すべてのデバイスで商品の多様性を明確に表示し、スムーズなカルーセルナビゲーションを備えています。" } },
+      en: "E-commerce style product showcase for a local gardening business. Built with Bootstrap, it can show physical products online. It supports smooth carousel products card and Youtube video into the website.",
+      ja: "地元の園芸ビジネス向けのEコマーススタイルの商品ショーケース。Bootstrapで構築され、物理的な製品をオンラインで表示できます。スムーズなカルーセル商品カードとYouTube動画をウェブサイトに統合しています。" } },
 
 
 

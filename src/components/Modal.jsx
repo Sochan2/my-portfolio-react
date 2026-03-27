@@ -22,11 +22,14 @@ return(
           <strong>Technology:</strong> {project.technology}
         </p>
         <p className="text-sm mb-1">
-        <strong>Plan:</strong> {project.plan[isJapanese ? "ja" : "en"]}
+        <strong>Problem</strong> {project.problem[isJapanese ? "ja" : "en"]}
         </p>
-        <p className="text-sm mb-4">
-        <strong>Users:</strong> {project.users[isJapanese ? "ja" : "en"]}
+        <p className="text-sm mb-1">
+        <strong>Solutions</strong> {project.solutions[isJapanese ? "ja" : "en"]}
         </p>
+        <p className="text-sm mb-1">
+        <strong>Results</strong> {project.results[isJapanese ? "ja" : "en"]}
+        </p> 
         <button className = "modal-visit-button">
         <a
           href={project.link}

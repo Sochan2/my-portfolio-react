@@ -20,51 +20,39 @@ export default function Work(){
       technology: "HTML, CSS, PWA",
       image:"/img/japan_rice_homepage.jpg",
       alt:"Japan rice MICO website preview picture",
-      plan:{
-        en:"Think about SEO and Responsive design. Include latest web technology,PWA",
-        ja:"SEOとリスポンシブルデザインを考えて作りましたそして、最新のテクノロジーであるPWAも入れ込みました",
+     problem:{
+        en:"There are no website to show their own rice products for Japanese rice farmers.",
+        ja:"日本の米農家が自分たちの米製品を紹介するためのウェブサイトが存在しないことが問題でした。",
       },
-      users:{
-        en:"This is Japanese rice farm website. This products are made in Nabari city and sell products for foreign people.",
-        ja:"日本のお米農家のウェブサイトです。この商品は名張市でできたお米で海外の方をターゲットにウェブサイトを構築しました。"
+      solutions:{
+        en:"To solve that, I created a website to show what kind of products they have and their strengths. Also, I implemented PWA features to make users can access the website easily.",
+        ja:"その問題を解決するために、彼らが持っている製品とその強みを紹介するウェブサイトを作成しました。また、ユーザーが簡単にウェブサイトにアクセスできるようにPWA機能を実装しました。"
+      },
+
+       results:{
+        en:"Delivered a functional website with PWA features, improving user accessibility.",
+        ja:"PWA機能を備えた機能的なウェブサイトを提供し、ユーザーのアクセシビリティを向上させました。"
       },
       link:"https://sochan2.github.io/japanese-rice/"
 
     },
-  
-
-    {
-      title:"Generate Password",
-       where: {"en": "Individual project", 
-              "ja": "Javascriptを使った個人プロジェクト" },
-      technology: "HTML, CSS, JS",
-      image:"/img/generate-password-site.png",
-      alt:"generate password site preview",
-      plan: {
-        en: "You can copy generated password only one click. If you click button, make strong password for you",
-        ja: "生成されたパスワードをワンクリックでコピー可能。ボタンを押すと強力なパスワードを生成します。"
-      },
-      users: {
-        en: "These days, weak password cause a big problem. To solve that, make strong password!",
-        ja: "最近、弱いパスワードは大きな問題になります。そのため、強力なパスワードを作成しました。"
-      },
-      link:"https://sochan2.github.io/generateio/"
-    },
 
     {
       title:"Boom Radio",
-       where: {"en": "TAFE school project", 
-              "ja": "TAFE学校プロジェクト"
-            },
+       where: {"en": "TAFE school real client project", 
+              "ja": "TAFE学校リアルクライアントプロジェクト" },
       technology: "WordPress (PHP), HTML5, CSS3, JavaScript (ES6+), Bootstrap, Git/GitHub",
       image:"/img/boom_radio.png",
       alt:"Boom Radio project preview",
-      plan: {
-        en: "Key features include live radio streaming and Spotify integration, which automatically retrieves and plays the latest podcast episodes on the website. My role was designing Wireframe, custom post types to manage content and github management",
-        ja: "UI/UXデザインに重点を置き、モバイルでもメニューが見やすくユーザーフレンドリーになるよう設計。また、ライブ再生やSpotifyから最新のポッドキャストを取得してウェブ上で聴ける機能も実装しました。現在はクライアントの都合上公開されてませんが、ローカル環境で再現できます。" },
-      users: {
-        en: "This is real client project. Target audience is students age who lives in Perth. They try to spread a community in Perth",
-        ja: "実際のクライアントプロジェクト。ターゲットはパース在住の学生で、コミュニティを広げることを目的としています。"
+      problem: {
+        en: "A Perth student radio station's previous website does not have live streaming and connecting to Spotify function. Also, they want to send regular newsletter to users but they cannot do it.",
+        ja: "UI/UXデザインに重点を置き、モバイルでもメニューが見やすくユーザーフレンドリーになるよう設計。また、ライブ再生やSpotifyから最新のポッドキャストを取得してウェブ上で聴ける機能も実装しました。" },
+      solutions: {
+        en: "We implemented live streaming and Spotify integration to address the limitations of the previous website. Additionally, we set up a newsletter to keep users informed. ",
+        ja: "前のウェブサイトの制限を解決するために、ライブストリーミングとSpotify統合を実装しました。さらに、WordPressを使用してニュースレターシステムを設定し、クライアントが自分でコンテンツとニュースレターを管理できるようにしました。" },
+      results: {
+        en: "Implementing live streaming and Spotify integration enhanced user engagement. We handed over the project following with action plan.",
+        ja: "ライブストリーミングとSpotify統合の実装により、ユーザーエンゲージメントが向上しました。アクションプランに従ってプロジェクトを引き渡しました。"
       },
       link:"https://github.com/Sochan2/boom-radio-wordpress"
     },
@@ -79,32 +67,19 @@ export default function Work(){
       technology: "HTML, CSS, JS, Sass, Bootstrap",
       image:"/img/bootstrap-thumbnail.png",
       alt:"george garden center website's appearence",
-      plan: {
-        en: "In this project, it is used Bootstrap technology especially. I managed to implement carousel and grid style in the website. Also, in the contact form, you can see stylish type of selecting form.",
-        ja: "このプロジェクトはバックエンド開発者との協働で進めました。私の役割はフロントエンドを担当し、Next.js・Tailwind を用いたUI開発、ログイン機能、APIフェッチの実装、Google Maps APIの統合、そしてデータベーススキーマ設計を行いました。"
+      problem: {
+        en: "A local gardening business does not have a website to show their products and services.",
+        ja: "地元の園芸ビジネスが、製品やサービスを紹介するためのウェブサイトを持っていないことが問題でした。"
       },
-      users: {
-        en: "Client is a george garden center. This corporation is a gardening shop and selling a variety of products. They want to show users different type of products on product page. Also, it is essential to introduce carousel.",
-        ja: "クライアントは George Garden Center です。この企業はガーデニングショップで、さまざまな製品を販売しています。ユーザーに向けて、製品ページで異なる種類の商品を見せたいと考えており、カルーセルの導入が不可欠となっています。"
+      solutions: {
+        en: "To solve that, I created a website to show what kind of products they have and their strengths. Also, I implemented smooth carousel products card and Youtube video into the website.",
+        ja: "その問題を解決するために、彼らが持っている製品とその強みを紹介するウェブサイトを作成しました。また、スムーズなカルーセル商品カードとYouTube動画をウェブサイトに統合しました。"
+      },
+      results: {
+        en: "Delivered a functional website with improved user experience, showcasing products effectively.",
+        ja: "機能的なウェブサイトを提供し、ユーザーエクスペリエンスを向上させ、製品を効果的に紹介しました。"
       },
       link:"https://sochan2.github.io/george-garden/"
-    },
-
-     {
-      title:"Typescript and React Weather App",
-        where: {"en": "Individual project", 
-              "ja": "ReactとTypescriptを使った個人プロジェクト" },
-      technology: "React, Typescript, OpenWeather API",
-      image:"/img/weather-app.png",
-      alt:"weather app preview",
-      plan: {
-        en: "In this project, I focused on building a weather application using React and Typescript. I integrated the OpenWeather API to fetch weather data and display it as a user-friendly interface.",
-        ja: "このプロジェクトでは、React と Typescript を使用して天気アプリケーションを構築しました。OpenWeather API を統合して天気データを取得し、ユーザーフレンドリーな方法で表示しました。" },
-      users: {
-        en: "This app provides information to local weather. It provides the location, temperatures, humidity, air pressure, wind speed, sunrise and sunset information. Also, I implemented weather forecasts every 6 hours.",
-        ja: "このアプリはローカルの天気情報を表示するアプリです。位置情報、気温、湿度、気圧、風速、日の出と日の入りの情報を提供します。また、6時間ごとの天気予報も実装しました。"
-      },
-      link:"https://react-app-sage-nine.vercel.app/"
     },
 
      {
@@ -114,12 +89,17 @@ export default function Work(){
       technology: "Typescript, Next.js, Tailwind CSS, Django and Supabase",
       image:"/img/artwork.png",
       alt:"artwork sharing website ",
-      plan: {
-        en: "Deep thinking about UI/UX design and database structure. My role is frontend development using Next.js and Tailwind CSS. Also,integrated frontend with REST API built by backend engineer",
-        ja: "UI/UXデザインとデータベース構造について深く考えました。Next.js と Tailwind CSS を使用したフロントエンド開発を担当し、バックエンドエンジニアが作成した REST API との統合も行いました。" },
-      users: {
-        en: "Uses will cheer up painters and can interact so closely. They can share their artworks, purchase products and get feedback from other users.",
-        ja: "このプロジェクトでは、アートワークを共有、他のユーザーからフィードバックを得られるプラットフォームを提供します。" },
+      problem: {
+      en: "Artists had no dedicated space to share work and get genuine feedback without the noise of mainstream social media.",
+      ja: "アーティストは、主流のソーシャルメディアのノイズなしで作品を共有し、本質的なフィードバックを得るための専用スペースがありませんでした。" },
+    solution: {
+      en: "Co-built a full-stack art community platform. Responsible for frontend UI, REST API integration with Django backend, and GitHub project management.",
+      ja: "フルスタックのアートコミュニティプラットフォームを共同で構築。フロントエンドUI、DjangoバックエンドとのREST API統合、およびGitHubプロジェクト管理を担当しました。"
+    },
+    result: {
+      en: "Launched a working platform where artists can share artworks, get feedback, and connect with other creators.",
+      ja: "アーティストが作品を共有し、フィードバックを得て、他のクリエイターとつながることができる動作するプラットフォームを立ち上げました。",
+    },
        link:"https://github.com/AstromaoLabs-V2/artlift"
     }
 
