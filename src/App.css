@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'H1Font';
-  src: url('/font/h1-font.otf') format('opentype');
+  src: url('/font/League_Gothic-Regular.otf') format('opentype');
 }
 
 @font-face{
@@ -40,7 +40,10 @@
 
 h1{
   font-family: H1Font;
-  font-size: 4.5rem;
+  font-size: 6.5rem;
+  font-weight: bold;
+  letter-spacing:-0.03em;
+  line-height:1
 }
 
 
@@ -147,7 +150,42 @@ nav a::after {
 
 
 main{
-  margin:7em;
+  margin:3.5em;
+}
+
+.about_me h2{
+  margin:0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns: 45% 55%;
+  gap:30px;
+}
+
+.hero-grid h1{
+  align-self:flex-end;
+}
+
+.hero-grid img{
+  width:100%;
+  max-width: 200%;
+  margin:20px;
+  overflow: hidden;
+}
+
+.hero-text{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hero-grid .hero-sub-text{
+  align-self:flex-end;
+  max-width:50%;
+  text-align: left;
+
 }
 
 
@@ -208,6 +246,7 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 .development, .design-section, .marketing{
   border: 2px solid #333;
   padding:10px;
+  border-radius: 16px;
 }
 
 

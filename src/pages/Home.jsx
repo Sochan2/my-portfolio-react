@@ -14,6 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 
  export default function Home() {
   const aboutRef = useRef(null);
+  const imgRef = useRef(null);
+  const expertiseRef = useRef(null);
 
    useEffect(()=>{
      gsap.fromTo(aboutRef.current, {
@@ -34,7 +36,33 @@ gsap.registerPlugin(ScrollTrigger);
         toggleActions: "play reverse play reverse",
       }
      });
-     
+
+     gsap.to(imgRef.current, {
+      scale:1.2,
+      scrollTrigger:{
+        trigger:imgRef.current,
+        start:'top center',
+        scrub:true,
+      }
+     })
+
+     gsap.fromTo(expertiseRef.current, {
+      x:-200,
+      opacity:0,
+     },
+     {
+    x: 0,                    // 元の位置へ
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+     scrollTrigger: {
+      trigger: expertiseRef.current,
+      start: "top 80%",
+      toggleActions: "play",
+    }
+     })
+
+   
    },[]);
 
   return (
@@ -43,10 +71,24 @@ gsap.registerPlugin(ScrollTrigger);
     <main>
    
     <section className="about_me" ref={aboutRef}>
+      <div className="hero-grid">
+        <div className="hero-text">
+           <h1 className="">less noise<br></br>
+      more flow </h1>
+      <div className="hero-sub-text">
+        <p>Designing and building the web with clarity and intention</p>
+      </div>
+        </div>
+
+        <div className="hero-image">
+          <img ref={imgRef} src="/img/my-portfolio-hero.png" alt=" do coding" />
+        </div>
+        
      
-      <h1 className="">I'm web designer <br></br>
-      &nbsp; &nbsp;&web developer</h1>
-      <h2>I design code simply and beautifully!!</h2>
+      </div>
+     
+      <h2>I'm web designer&nbsp; &nbsp;&&nbsp; &nbsp;web developer</h2>
+      <h3>I design code simply and beautifully!!</h3>
      
       
       <img src="/img/soki-coder.gif " alt=" do coding" />
@@ -59,7 +101,7 @@ gsap.registerPlugin(ScrollTrigger);
       
        
        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 expertise-grid ">
+        <div ref={expertiseRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 expertise-grid ">
           <div className="design-section p-6 m-3 shadow-md">
             <div className="image-flex">
                 <img className="expertise-logo" src="/img/design-logo.png" alt="design logo picture with orange color" />
@@ -158,15 +200,17 @@ gsap.registerPlugin(ScrollTrigger);
      
       <h2>My Work</h2>
       <Project />
-
       <h2>Working Experience</h2>
-      <h3>SEO & Web Marketing Company – Web Developer (Part-time)</h3>
+      <div ref={expertiseRef}>
+        <h3>SEO & Web Marketing Company – Web Developer (Part-time)</h3>
       <p>2025~2026| Remote (Japan)</p>
      <li>Implemented SEO-driven HTML/CSS updates based on wireframes</li>
      <li>Added structured elements (H1/H2, FAQ sections, schema-like content)</li>
      <li>Conducted technical SEO audits</li>
      <li>Ensured existing DOM structure was preserved</li>
      <li>Created PowerPoint-based SEO proposals for clients</li>
+      </div>
+      
       </main>
       <Footer />
       </>
