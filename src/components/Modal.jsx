@@ -1,4 +1,4 @@
-export default function Modal({project,onClose,isJapanese}){
+export default function Modal({en,project,onClose,isJapanese}){
   if (!project) return null;
 return(
   <div className="bg-opacity-60 fixed inset-0 z-50">

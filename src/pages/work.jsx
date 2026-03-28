@@ -91,17 +91,18 @@ export default function Work(){
       alt:"artwork sharing website ",
       problem: {
       en: "Artists had no dedicated space to share work and get genuine feedback without the noise of mainstream social media.",
-      ja: "アーティストは、主流のソーシャルメディアのノイズなしで作品を共有し、本質的なフィードバックを得るための専用スペースがありませんでした。" },
-    solution: {
+      ja: "アーティストは、主流のソーシャルメディアのノイズなしで作品を共有し、本質的なフィードバックを得るための専用スペースがありませんでした。"
+     },
+    solutions: {
       en: "Co-built a full-stack art community platform. Responsible for frontend UI, REST API integration with Django backend, and GitHub project management.",
       ja: "フルスタックのアートコミュニティプラットフォームを共同で構築。フロントエンドUI、DjangoバックエンドとのREST API統合、およびGitHubプロジェクト管理を担当しました。"
     },
-    result: {
+    results: {
       en: "Launched a working platform where artists can share artworks, get feedback, and connect with other creators.",
       ja: "アーティストが作品を共有し、フィードバックを得て、他のクリエイターとつながることができる動作するプラットフォームを立ち上げました。",
     },
        link:"https://github.com/AstromaoLabs-V2/artlift"
-    }
+    },
 
 
 
