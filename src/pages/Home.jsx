@@ -101,7 +101,7 @@ gsap.registerPlugin(ScrollTrigger);
       
        
        
-        <div ref={expertiseRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 expertise-grid ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 expertise-grid ">
           <div className="design-section p-6 m-3 shadow-md">
             <div className="image-flex">
                 <img className="expertise-logo" src="/img/design-logo.png" alt="design logo picture with orange color" />
@@ -204,11 +204,13 @@ gsap.registerPlugin(ScrollTrigger);
       <div ref={expertiseRef}>
         <h3>SEO & Web Marketing Company – Web Developer (Part-time)</h3>
       <p>2025~2026| Remote (Japan)</p>
+      <ul>
      <li>Implemented SEO-driven HTML/CSS updates based on wireframes</li>
      <li>Added structured elements (H1/H2, FAQ sections, schema-like content)</li>
      <li>Conducted technical SEO audits</li>
      <li>Ensured existing DOM structure was preserved</li>
      <li>Created PowerPoint-based SEO proposals for clients</li>
+     </ul>
       </div>
       
       </main>

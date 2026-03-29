@@ -1,4 +1,5 @@
-import React from "react";
+
+import {React, useState} from "react";
 import {Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/Aboutus";
@@ -9,13 +10,19 @@ import AboutUs from "./pages/Aboutus";
  import './App.css';
  import HomeJa from "./pages/Home-ja";
  import AboutUsJa from "./pages/AboutusJa";
+ import { LoadingScreen } from "./components/loading.jsx";
  
 
 
  const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
    return (
-   
-        <Routes>
+    <>
+    {isLoading && (
+      <LoadingScreen onComplete={()=>setIsLoading(false)} />
+    )}
+    {!isLoading &&(
+          <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<AboutUs />} />
          <Route path="/work" element={<Work />} />
@@ -26,6 +33,9 @@ import AboutUs from "./pages/Aboutus";
         <Route path="/ja/about" element={<AboutUsJa />} />
         <Route path="/ja/work" element={<Work />} />
       </Routes>
+    )}
+ 
+      </>
     
    );
  };

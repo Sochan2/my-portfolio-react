@@ -16,6 +16,9 @@ gsap.registerPlugin(ScrollTrigger);
   const location = useLocation();
   const isJapanese = location.pathname.startsWith("/ja");
   const aboutRef = useRef(null);
+   const imgRef = useRef(null);
+  const expertiseRef = useRef(null);
+
 
    useEffect(()=>{
      gsap.fromTo(aboutRef.current, {
@@ -36,6 +39,31 @@ gsap.registerPlugin(ScrollTrigger);
         toggleActions: "play reverse play reverse",
       }
      });
+
+     gsap.to(imgRef.current, {
+      scale:1.2,
+      scrollTrigger:{
+        trigger:imgRef.current,
+        start:'top center',
+        scrub:true,
+      }
+     })
+
+     gsap.fromTo(expertiseRef.current, {
+      x:-200,
+      opacity:0,
+     },
+     {
+    x: 0,                    // 元の位置へ
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+     scrollTrigger: {
+      trigger: expertiseRef.current,
+      start: "top 80%",
+      toggleActions: "play",
+    }
+     })
      
    },[]);
 
@@ -43,14 +71,30 @@ gsap.registerPlugin(ScrollTrigger);
     <>
     <Header />
     <main>
-   
-    <section className="about_me" ref={aboutRef}>
+
+       <section className="about_me" ref={aboutRef}>
+      <div className="hero-grid">
+        <div className="hero-text">
+           <h1 className="">less noise<br></br>
+      more flow </h1>
+      <div className="hero-sub-text">
+        <p>デザインとコードで、本質を届ける。</p> </div>
+        </div>
+
+        <div className="hero-image">
+          <img ref={imgRef} src="/img/my-portfolio-hero.png" alt=" do coding" />
+        </div>
+        
      
-      <h1 className="">Webデザインと開発で、体験をもっとシンプルに</h1>
-      <h2>見やすく・使いやすい。そんなWebsiteをつくります</h2>
+      </div>
+      <h2>Webデザインと開発で、体験をもっとシンプルに</h2>
+      <h3>見やすく・使いやすい。そんなWebsiteをつくります</h3>
       
-      <img src="img/portfolio_home.gif " alt=" do coding" />
+      <img src="/img/soki-coder.gif " alt=" do coding" />
     </section>
+   
+     
+    
 
       <section className="intro">
       <section className="expertise-section">
@@ -143,6 +187,17 @@ gsap.registerPlugin(ScrollTrigger);
       </section>
       <h2>Project</h2>
       <Project isJapanese={isJapanese} />
+
+      <h2>職務経験</h2>
+<div ref={expertiseRef}>
+  <h3>SEO・Webマーケティング会社 – Webデベロッパー（パートタイム）</h3>
+  <p>2025〜2026 | リモート（日本）</p>
+  <li>ワイヤーフレームをもとにSEOを意識したHTML/CSSの実装・修正</li>
+  <li>構造化要素（H1/H2、FAQセクション、スキーマ的コンテンツ）の追加</li>
+  <li>テクニカルSEO監査の実施</li>
+  <li>既存のDOM構造を維持しながらの実装</li>
+  <li>クライアント向けSEO提案資料（PowerPoint）の作成</li>
+</div>
       </main>
       <Footer />
       </>
