@@ -205,11 +205,11 @@ gsap.registerPlugin(ScrollTrigger);
         <h3>SEO & Web Marketing Company – Web Developer (Part-time)</h3>
       <p>2025~2026| Remote (Japan)</p>
       <ul>
-     <li>Implemented SEO-driven HTML/CSS updates based on wireframes</li>
-     <li>Added structured elements (H1/H2, FAQ sections, schema-like content)</li>
-     <li>Conducted technical SEO audits</li>
-     <li>Ensured existing DOM structure was preserved</li>
-     <li>Created PowerPoint-based SEO proposals for clients</li>
+      <li>Implemented SEO-driven HTML/CSS updates based on wireframes</li>
+      <li>Added structured elements (H1/H2, FAQ sections, schema-like content)</li>
+      <li>Conducted technical SEO audits</li>
+      <li>Ensured existing DOM structure was preserved</li>
+      <li>Created PowerPoint-based SEO proposals for clients</li>
      </ul>
       </div>
       

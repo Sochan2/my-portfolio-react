@@ -695,7 +695,7 @@ select {
   }
 
   main {
-    margin: 0;
+    margin: 10px;
   }
 
   .expertise-section {
@@ -816,5 +816,10 @@ select {
   }
 
   .nav-menu a {
+  }
+
+  .hero-grid .hero-sub-text p{
+    line-height: 0.9;
+
   }
 }
