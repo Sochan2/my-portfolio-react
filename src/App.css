@@ -695,7 +695,7 @@ select {
   }
 
   main {
-    margin: 10px;
+    margin: 20px;
   }
 
   .expertise-section {
@@ -820,6 +820,11 @@ select {
 
   .hero-grid .hero-sub-text p{
     line-height: 0.9;
+    text-align: center;
+  }
 
+  .hero-grid .hero-sub-text{
+    max-width:100%;
+    margin-top:10px;
   }
 }
