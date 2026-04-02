@@ -54,7 +54,8 @@ export default function Work(){
         en: "Implementing live streaming and Spotify integration enhanced user engagement. We handed over the project following with action plan.",
         ja: "ライブストリーミングとSpotify統合の実装により、ユーザーエンゲージメントが向上しました。アクションプランに従ってプロジェクトを引き渡しました。"
       },
-      link:"https://github.com/Sochan2/boom-radio-wordpress"
+      link:"https://github.com/Sochan2/boom-radio-wordpress",
+      demo:"https://youtu.be/w7_N3VsbRjY"
     },
 
     
@@ -137,6 +138,7 @@ export default function Work(){
     project={selectProject} 
     onClose={() => setSelectProject(null)} 
     isJapanese={isJapanese} 
+    demo={selectProject.demo} 
   />
 )}
  

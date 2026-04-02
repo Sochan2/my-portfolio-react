@@ -482,11 +482,18 @@ footer a:hover {
 
 .modal-visit-button a {
   color: #fff;
+  text-decoration: none;
 }
 
-.modal a {
-  color: #fff;
-  text-decoration: none;
+
+.modal .demovideo-link{
+  color:#0000ee;
+  text-decoration: underline;
+  
+}
+
+.modal p{
+font-size: 0.875rem;
 }
 
 /*contact*/

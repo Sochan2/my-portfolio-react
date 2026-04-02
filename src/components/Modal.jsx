@@ -1,5 +1,6 @@
-export default function Modal({en,project,onClose,isJapanese}){
+export default function Modal({en,project,onClose,isJapanese,demo}){
   if (!project) return null;
+
 return(
   <div className="bg-opacity-60 fixed inset-0 z-50">
     <div className="modal bg-white m-13 relative grid grid-cols-2">
@@ -30,7 +31,15 @@ return(
         <p className="text-sm mb-1">
         <strong>Results</strong> {project.results[isJapanese ? "ja" : "en"]}
         </p> 
+
+
+        {demo &&
+        <p><strong>Demo video:</strong>  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="demovideo-link underline">
+            View Demo in Youtube
+          </a></p> 
+        }
         <button className = "modal-visit-button">
+          
         <a
           href={project.link}
           target="_blank"
@@ -40,6 +49,7 @@ return(
           Visit Project
         </a>
         </button>
+        
     
       </div>
        
