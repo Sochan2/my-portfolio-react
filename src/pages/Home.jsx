@@ -87,7 +87,7 @@ gsap.registerPlugin(ScrollTrigger);
      
       </div>
      
-      <h2>I'm web designer&nbsp; &nbsp;&&nbsp; &nbsp;web developer</h2>
+      <h2>Frontend Developer with UI/UX & Marketing background</h2>
       <h3>I design code simply and beautifully!!</h3>
      
       
@@ -110,7 +110,7 @@ gsap.registerPlugin(ScrollTrigger);
           <h3>Design</h3>
 
           <p>
-            I value with a simple design. I always keep in mind to clean design, user interactive designs. 
+            I value simplicity in design and focus on creating clean, user-friendly interfaces.
           </p>
           <p><strong>What I will design</strong></p>
           <ul>
@@ -138,7 +138,7 @@ gsap.registerPlugin(ScrollTrigger);
           <p>
           I write clean and understandable code that is easy for teams to work together and maintain. 
           </p>
-          <p><strong>What I will write code</strong></p>
+          <p><strong>What I build</strong></p>
           <ul>
             <ul>
             <li>HTML, CSS, JavaScript</li>
@@ -168,7 +168,7 @@ gsap.registerPlugin(ScrollTrigger);
              </div>
           <h3>Marketing</h3>
           <p>
-          I value understanding user needs. I analyse user behaviour and apply those insights to SEO strategies to improve engagement.          </p>
+          Designed the UI based on a primary persona: Hidden artists seeking the place where they sell their artworks. The best thing is making community with their fans. This led to clean layouts, minimal distractions, and a structured comment system.I analyze user behaviour and apply those insights to SEO strategies to improve engagement. </p>
           <p><strong>What I will analyze</strong></p>
           <ul>
             <li>Persona</li>

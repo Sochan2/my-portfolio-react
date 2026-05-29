@@ -30,7 +30,7 @@ export default function Work(){
       },
 
        results:{
-        en:"Delivered a functional website with PWA features, improving user accessibility.",
+        en:"Built a responsive website with PWA support, reducing load time and enabling mobile-first access",
         ja:"PWA機能を備えた機能的なウェブサイトを提供し、ユーザーのアクセシビリティを向上させました。"
       },
       link:"https://sochan2.github.io/japanese-rice/"
@@ -103,6 +103,29 @@ export default function Work(){
       ja: "アーティストが作品を共有し、フィードバックを得て、他のクリエイターとつながることができる動作するプラットフォームを立ち上げました。",
     },
        link:"https://github.com/AstromaoLabs-V2/artlift"
+    },
+
+    {
+      title:" PTE Coaching Website",
+        where: {"en": "Client Work", 
+              "ja": "クライアントワーク" }, 
+      technology: "HTML, CSS, JS",
+      image:"/img/pte-work.png",
+      alt:"pte coaching website ",
+      problem: {
+
+      en: "A coaching business for teaching PTE struggled with attracting clients due to the absence of an online presence. They currently do not require a custom domain.",
+      ja: "PTEを教えるコーチングのビジネスを行なってましたが、オンラインのサイトがなく、集客に苦労していました。独自ドメインは今の所必要ないということでした。"
+     },
+    solutions: {
+      en: "Built an LP site with an attractive design to effectively showcase the client's services. Additionally, I implemented SEO strategies to enhance visibility in search engines. Since this site does not have a section for personal information or payment functions, and the client decided to determine domain acquisition based on the feeling of attracting customers, I published the site with Vercel's free domain.",
+      ja: "LPサイトを構築し、クライアントのサービスを効果的に紹介するための魅力的なデザインを作成しました。さらに、SEO対策を施し、検索エンジンでの可視性を向上させました。とりあえずドメインは集客の感じを見てから取得を決めると言うことで、このサイトでは個人情報を入れる部分や決済機能がないため、vercelの無料ドメインでサイトを公開しました。"
+    },
+    results: {
+      en: "While the results of client acquisition are not yet known, by building an attractive LP site and implementing SEO strategies, we have enhanced the online presence of the client's services.",
+      ja: "集客の結果はまだわかりませんが、魅力的なLPサイトを構築し、SEO対策を施すことで、クライアントのサービスのオンラインプレゼンスを向上させました。",
+    },
+       link:"https://sota-pte.vercel.app/"
     },
 
 
