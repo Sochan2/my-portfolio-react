@@ -202,7 +202,7 @@ gsap.registerPlugin(ScrollTrigger);
       <Project />
       <h2>Working Experience</h2>
       <div ref={expertiseRef}>
-        <h3>SEO & Web Marketing Company – Web Developer (Part-time)</h3>
+        <h3>SEO & Web Marketing Company – Web Developer </h3>
       <p>2025~2026| Remote (Japan)</p>
       <ul>
       <li>Implemented SEO-driven HTML/CSS updates based on wireframes</li>

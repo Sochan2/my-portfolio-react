@@ -190,7 +190,7 @@ gsap.registerPlugin(ScrollTrigger);
 
       <h2>職務経験</h2>
 <div ref={expertiseRef}>
-  <h3>SEO・Webマーケティング会社 – Webデベロッパー（パートタイム）</h3>
+  <h3>SEO・Webマーケティング会社 – Webデベロッパー</h3>
   <p>2025〜2026 | リモート（日本）</p>
   <li>ワイヤーフレームをもとにSEOを意識したHTML/CSSの実装・修正</li>
   <li>構造化要素（H1/H2、FAQセクション、スキーマ的コンテンツ）の追加</li>
