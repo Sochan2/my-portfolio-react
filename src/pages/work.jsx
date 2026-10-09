@@ -4,172 +4,165 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Modal from "../components/Modal";
 
-export default function Work(){
+export default function Work() {
   const location = useLocation();
   const isJapanese = location.pathname.startsWith("/ja");
-  const [selectProject, setSelectProject]=useState(null);
+  const [selectProject, setSelectProject] = useState(null);
 
   const projects = [
     {
-      title:"Japan rice",
-      where: {"en": "TAFE school project", 
-              "ja": "TAFE学校プロジェクト"
-            },
-
+      title: "Japan rice",
+      where: { en: "TAFE school project", ja: "TAFE学校プロジェクト" },
 
       technology: "HTML, CSS, PWA",
-      image:"/img/japan_rice_homepage.jpg",
-      alt:"Japan rice MICO website preview picture",
-     problem:{
-        en:"There are no website to show their own rice products for Japanese rice farmers.",
-        ja:"日本の米農家が自分たちの米製品を紹介するためのウェブサイトが存在しないことが問題でした。",
+      image: "/img/japan_rice_homepage.jpg",
+      alt: "Japan rice MICO website preview picture",
+      problem: {
+        en: "There are no website to show their own rice products for Japanese rice farmers.",
+        ja: "日本の米農家が自分たちの米製品を紹介するためのウェブサイトが存在しないことが問題でした。",
       },
-      solutions:{
-        en:"To solve that, I created a website to show what kind of products they have and their strengths. Also, I implemented PWA features to make users can access the website easily.",
-        ja:"その問題を解決するために、彼らが持っている製品とその強みを紹介するウェブサイトを作成しました。また、ユーザーが簡単にウェブサイトにアクセスできるようにPWA機能を実装しました。"
+      solutions: {
+        en: "To solve that, I created a website to show what kind of products they have and their strengths. Also, I implemented PWA features to make users can access the website easily.",
+        ja: "その問題を解決するために、彼らが持っている製品とその強みを紹介するウェブサイトを作成しました。また、ユーザーが簡単にウェブサイトにアクセスできるようにPWA機能を実装しました。",
       },
 
-       results:{
-        en:"Built a responsive website with PWA support, reducing load time and enabling mobile-first access",
-        ja:"PWA機能を備えた機能的なウェブサイトを提供し、ユーザーのアクセシビリティを向上させました。"
+      results: {
+        en: "Built a responsive website with PWA support, reducing load time and enabling mobile-first access",
+        ja: "PWA機能を備えた機能的なウェブサイトを提供し、ユーザーのアクセシビリティを向上させました。",
       },
-      link:"https://sochan2.github.io/japanese-rice/"
-
+      link: "https://sochan2.github.io/japanese-rice/",
     },
 
     {
-      title:"Boom Radio",
-       where: {"en": "TAFE school real client project", 
-              "ja": "TAFE学校リアルクライアントプロジェクト" },
-      technology: "WordPress (PHP), HTML5, CSS3, JavaScript (ES6+), Bootstrap, Git/GitHub",
-      image:"/img/boom_radio.png",
-      alt:"Boom Radio project preview",
+      title: "Boom Radio",
+      where: {
+        en: "TAFE school real client project",
+        ja: "TAFE学校リアルクライアントプロジェクト",
+      },
+      technology:
+        "WordPress (PHP), HTML5, CSS3, JavaScript (ES6+), Bootstrap, Git/GitHub",
+      image: "/img/boom_radio.png",
+      alt: "Boom Radio project preview",
       problem: {
         en: "A Perth student radio station's previous website does not have live streaming and connecting to Spotify function. Also, they want to send regular newsletter to users but they cannot do it.",
-        ja: "UI/UXデザインに重点を置き、モバイルでもメニューが見やすくユーザーフレンドリーになるよう設計。また、ライブ再生やSpotifyから最新のポッドキャストを取得してウェブ上で聴ける機能も実装しました。" },
+        ja: "UI/UXデザインに重点を置き、モバイルでもメニューが見やすくユーザーフレンドリーになるよう設計。また、ライブ再生やSpotifyから最新のポッドキャストを取得してウェブ上で聴ける機能も実装しました。",
+      },
       solutions: {
         en: "We implemented live streaming and Spotify integration to address the limitations of the previous website. Additionally, we set up a newsletter to keep users informed. ",
-        ja: "前のウェブサイトの制限を解決するために、ライブストリーミングとSpotify統合を実装しました。さらに、WordPressを使用してニュースレターシステムを設定し、クライアントが自分でコンテンツとニュースレターを管理できるようにしました。" },
+        ja: "前のウェブサイトの制限を解決するために、ライブストリーミングとSpotify統合を実装しました。さらに、WordPressを使用してニュースレターシステムを設定し、クライアントが自分でコンテンツとニュースレターを管理できるようにしました。",
+      },
       results: {
         en: "Implementing live streaming and Spotify integration enhanced user engagement. We handed over the project following with action plan.",
-        ja: "ライブストリーミングとSpotify統合の実装により、ユーザーエンゲージメントが向上しました。アクションプランに従ってプロジェクトを引き渡しました。"
+        ja: "ライブストリーミングとSpotify統合の実装により、ユーザーエンゲージメントが向上しました。アクションプランに従ってプロジェクトを引き渡しました。",
       },
-      link:"https://github.com/Sochan2/boom-radio-wordpress",
-      demo:"https://youtu.be/w7_N3VsbRjY"
+      link: "https://github.com/Sochan2/boom-radio-wordpress",
+      demo: "https://youtu.be/w7_N3VsbRjY",
     },
 
-    
-
     {
-      title:"George Garden Center",
-       where: {"en": "TAFE school project", 
-              "ja": "TAFE学校プロジェクト"
-            },
+      title: "George Garden Center",
+      where: { en: "TAFE school project", ja: "TAFE学校プロジェクト" },
       technology: "HTML, CSS, JS, Sass, Bootstrap",
-      image:"/img/bootstrap-thumbnail.png",
-      alt:"george garden center website's appearence",
+      image: "/img/bootstrap-thumbnail.png",
+      alt: "george garden center website's appearence",
       problem: {
         en: "A local gardening business does not have a website to show their products and services.",
-        ja: "地元の園芸ビジネスが、製品やサービスを紹介するためのウェブサイトを持っていないことが問題でした。"
+        ja: "地元の園芸ビジネスが、製品やサービスを紹介するためのウェブサイトを持っていないことが問題でした。",
       },
       solutions: {
         en: "To solve that, I created a website to show what kind of products they have and their strengths. Also, I implemented smooth carousel products card and Youtube video into the website.",
-        ja: "その問題を解決するために、彼らが持っている製品とその強みを紹介するウェブサイトを作成しました。また、スムーズなカルーセル商品カードとYouTube動画をウェブサイトに統合しました。"
+        ja: "その問題を解決するために、彼らが持っている製品とその強みを紹介するウェブサイトを作成しました。また、スムーズなカルーセル商品カードとYouTube動画をウェブサイトに統合しました。",
       },
       results: {
         en: "Delivered a functional website with improved user experience, showcasing products effectively.",
-        ja: "機能的なウェブサイトを提供し、ユーザーエクスペリエンスを向上させ、製品を効果的に紹介しました。"
+        ja: "機能的なウェブサイトを提供し、ユーザーエクスペリエンスを向上させ、製品を効果的に紹介しました。",
       },
-      link:"https://sochan2.github.io/george-garden/"
-    },
-
-     {
-      title:" Artwork Project",
-        where: {"en": "Collaborative Team Project", 
-              "ja": "共同プロジェクト" },
-      technology: "Typescript, Next.js, Tailwind CSS, Django and Supabase",
-      image:"/img/artwork.png",
-      alt:"artwork sharing website ",
-      problem: {
-      en: "Artists had no dedicated space to share work and get genuine feedback without the noise of mainstream social media.",
-      ja: "アーティストは、主流のソーシャルメディアのノイズなしで作品を共有し、本質的なフィードバックを得るための専用スペースがありませんでした。"
-     },
-    solutions: {
-      en: "Co-built a full-stack art community platform. Responsible for frontend UI, REST API integration with Django backend, and GitHub project management.",
-      ja: "フルスタックのアートコミュニティプラットフォームを共同で構築。フロントエンドUI、DjangoバックエンドとのREST API統合、およびGitHubプロジェクト管理を担当しました。"
-    },
-    results: {
-      en: "Launched a working platform where artists can share artworks, get feedback, and connect with other creators.",
-      ja: "アーティストが作品を共有し、フィードバックを得て、他のクリエイターとつながることができる動作するプラットフォームを立ち上げました。",
-    },
-       link:"https://github.com/AstromaoLabs-V2/artlift"
+      link: "https://sochan2.github.io/george-garden/",
     },
 
     {
-      title:" PTE Coaching Website",
-        where: {"en": "Client Work", 
-              "ja": "クライアントワーク" }, 
-      technology: "HTML, CSS, JS",
-      image:"/img/pte-work.png",
-      alt:"pte coaching website ",
+      title: " Artwork Project",
+      where: { en: "Collaborative Team Project", ja: "共同プロジェクト" },
+      technology: "Typescript, Next.js, Tailwind CSS, Django and Supabase",
+      image: "/img/artwork.png",
+      alt: "artwork sharing website ",
       problem: {
-
-      en: "A coaching business for teaching PTE struggled with attracting clients due to the absence of an online presence. They currently do not require a custom domain.",
-      ja: "PTEを教えるコーチングのビジネスを行なってましたが、オンラインのサイトがなく、集客に苦労していました。独自ドメインは今の所必要ないということでした。"
-     },
-    solutions: {
-      en: "Built an LP site with an attractive design to effectively showcase the client's services. Additionally, I implemented SEO strategies to enhance visibility in search engines. Since this site does not have a section for personal information or payment functions, and the client decided to determine domain acquisition based on the feeling of attracting customers, I published the site with Vercel's free domain.",
-      ja: "LPサイトを構築し、クライアントのサービスを効果的に紹介するための魅力的なデザインを作成しました。さらに、SEO対策を施し、検索エンジンでの可視性を向上させました。とりあえずドメインは集客の感じを見てから取得を決めると言うことで、このサイトでは個人情報を入れる部分や決済機能がないため、vercelの無料ドメインでサイトを公開しました。"
+        en: "Artists had no dedicated space to share work and get genuine feedback without the noise of mainstream social media.",
+        ja: "アーティストは、主流のソーシャルメディアのノイズなしで作品を共有し、本質的なフィードバックを得るための専用スペースがありませんでした。",
+      },
+      solutions: {
+        en: "Co-built a full-stack art community platform. Responsible for frontend UI, REST API integration with Django backend, and GitHub project management.",
+        ja: "フルスタックのアートコミュニティプラットフォームを共同で構築。フロントエンドUI、DjangoバックエンドとのREST API統合、およびGitHubプロジェクト管理を担当しました。",
+      },
+      results: {
+        en: "Launched a working platform where artists can share artworks, get feedback, and connect with other creators.",
+        ja: "アーティストが作品を共有し、フィードバックを得て、他のクリエイターとつながることができる動作するプラットフォームを立ち上げました。",
+      },
+      link: "https://github.com/AstromaoLabs-V2/artlift",
     },
-    results: {
-      en: "While the results of client acquisition are not yet known, by building an attractive LP site and implementing SEO strategies, we have enhanced the online presence of the client's services.",
-      ja: "集客の結果はまだわかりませんが、魅力的なLPサイトを構築し、SEO対策を施すことで、クライアントのサービスのオンラインプレゼンスを向上させました。",
+
+    {
+      title: " PTE Coaching Website",
+      where: { en: "Client Work", ja: "クライアントワーク" },
+      technology: "HTML, CSS, JS",
+      image: "/img/pte-work.png",
+      alt: "pte coaching website ",
+      problem: {
+        en: "A coaching business for teaching PTE struggled with attracting clients due to the absence of an online presence. They currently do not require a custom domain.",
+        ja: "PTEを教えるコーチングのビジネスを行なってましたが、オンラインのサイトがなく、集客に苦労していました。独自ドメインは今の所必要ないということでした。",
+      },
+      solutions: {
+        en: "Built an LP site with an attractive design to effectively showcase the client's services. Additionally, I implemented SEO strategies to enhance visibility in search engines. Since this site does not have a section for personal information or payment functions, and the client decided to determine domain acquisition based on the feeling of attracting customers, I published the site with Vercel's free domain.",
+        ja: "LPサイトを構築し、クライアントのサービスを効果的に紹介するための魅力的なデザインを作成しました。さらに、SEO対策を施し、検索エンジンでの可視性を向上させました。とりあえずドメインは集客の感じを見てから取得を決めると言うことで、このサイトでは個人情報を入れる部分や決済機能がないため、vercelの無料ドメインでサイトを公開しました。",
+      },
+      results: {
+        en: "While the results of client acquisition are not yet known, by building an attractive LP site and implementing SEO strategies, we have enhanced the online presence of the client's services.",
+        ja: "集客の結果はまだわかりませんが、魅力的なLPサイトを構築し、SEO対策を施すことで、クライアントのサービスのオンラインプレゼンスを向上させました。",
+      },
+      link: "https://sota-pte.vercel.app/",
     },
-       link:"https://sota-pte.vercel.app/"
-    },
+  ];
 
+  return (
+    <>
+      <Header />
+      <main>
+        <h1>Work</h1>
 
-
-     
-
-
-  ]
-
-  return(
-  <>
-  <Header />
-  <main>
-    <h1>Work</h1>
-
-
-      <section class="m-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {projects.map((project,index)=>{
-          return(
-          <section class="work_card">
-          <img src={project.image} alt={project.alt}/>
-          <button className="mt-2 work-button" onClick={()=>setSelectProject(project)}>Click here</button>
-          <h3><a href={project.link}>{project.title}</a></h3>
-          <p className="text-sm text-gray-600 mb-2">{project.technology}</p>
-        
+        <section class="m-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {projects.map((project, index) => {
+            return (
+              <section class="work_card">
+                <img src={project.image} alt={project.alt} />
+                <button
+                  className="mt-2 work-button"
+                  onClick={() => setSelectProject(project)}
+                >
+                  Click here
+                </button>
+                <h3>
+                  <a href={project.link}>{project.title}</a>
+                </h3>
+                <p className="text-sm text-gray-600 mb-2">
+                  {project.technology}
+                </p>
+              </section>
+            );
+          })}
         </section>
-          );
-        })}
-      </section>
 
-      {selectProject && (
-  <Modal 
-    project={selectProject} 
-    onClose={() => setSelectProject(null)} 
-    isJapanese={isJapanese} 
-    demo={selectProject.demo} 
-  />
-)}
- 
-  </main>
+        {selectProject && (
+          <Modal
+            project={selectProject}
+            onClose={() => setSelectProject(null)}
+            isJapanese={isJapanese}
+            demo={selectProject.demo}
+          />
+        )}
+      </main>
 
-  <Footer />
-  
-  </>
+      <Footer />
+    </>
   );
 }
 
