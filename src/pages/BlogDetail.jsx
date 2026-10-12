@@ -21,14 +21,14 @@ export default function BlogDetail() {
   
     <>
   
-    <main className = 'blog-detail-main container-xl grid-gap-6 xl:grid-cols-12 '>
+    <main className="section blog-detail-main">
       <div className="col-span-9 xl:col-span-8 col-start-2">
-        <div className="max-w-3xl mx-auto px-4 md:px-0">
+        <div className="max-w-3xl mx-auto">
           <div className="blog-top">
           <h1>{post.title}</h1>
          
-          <div class="category-date-detail">
-            <p class="post-category">{post.category}</p>
+          <div className="category-date-detail">
+            <p className="post-category">{post.category}</p>
             <p>{post.date}</p>
             </div>
             

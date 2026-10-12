@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import getAllPosts from "../utils/getAllPosts.jsx";
-import Header from '../components/header.jsx';
-import Footer from '../components/footer.jsx';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Blog = ()=>{
 const [posts,setPosts] = useState([]);
@@ -19,17 +19,17 @@ useEffect(()=>{
   return(
     <> 
     <Header />
-    <main>
+    <main className="section">
     <h1>Blog</h1>
       <ul>
-      <div className=" blog grid grid-cols-3 gap-4 m-4">
+      <div className="blog card-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map(post=>(
          
              <li key ={post.slug}>
             <Link to={`/blog/${post.slug}`}>
             <img src={post.thumbnail} alt={post.title}></img>
-            <div class="category-date">
-            <p class="post-category">{post.category}</p>
+            <div className="category-date">
+            <p className="post-category">{post.category}</p>
             <p>{post.date}</p>
             </div>
            

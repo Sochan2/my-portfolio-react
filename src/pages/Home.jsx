@@ -1,9 +1,7 @@
 import { useEffect, useRef } from 'react';
-import '../App.css';
-import Header from '../components/header';
-import Skills from '../components/my-skill';
-import Project from '../components/project';
-import Footer from '../components/footer';
+import Header from '../components/Header';
+import FeaturedProjects from '../components/FeaturedProjects';
+import Footer from '../components/Footer';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -70,7 +68,7 @@ gsap.registerPlugin(ScrollTrigger);
     <Header />
     <main>
    
-    <section className="about_me" ref={aboutRef}>
+    <section className="section about_me" ref={aboutRef}>
       <div className="hero-grid">
         <div className="hero-text">
            <h1 className="">less noise<br></br>
@@ -81,7 +79,7 @@ gsap.registerPlugin(ScrollTrigger);
         </div>
 
         <div className="hero-image">
-          <img ref={imgRef} src="/img/my-portfolio-hero.png" alt=" do coding" />
+          <img ref={imgRef} src="/img/home/portfolio-hero.png" alt=" do coding" />
         </div>
         
      
@@ -91,20 +89,19 @@ gsap.registerPlugin(ScrollTrigger);
       <h3>I design code simply and beautifully!!</h3>
      
       
-      <img src="/img/soki-coder.gif " alt=" do coding" />
+      <img src="/img/home/soki-coder.gif" alt=" do coding" />
     </section>
 
-      <section className="intro">
-      <section className="expertise-section">
+      <section className="section expertise-section text-center">
 
            <h2>My Expertise</h2>
       
        
        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 expertise-grid ">
-          <div className="design-section p-6 m-3 shadow-md">
+        <div className="expertise-grid card-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="design-section shadow-md">
             <div className="image-flex">
-                <img className="expertise-logo" src="/img/design-logo.png" alt="design logo picture with orange color" />
+                <img className="expertise-logo" src="/img/expertise/design.png" alt="design logo picture with orange color" />
             </div>
         
           <h3>Design</h3>
@@ -130,9 +127,9 @@ gsap.registerPlugin(ScrollTrigger);
 
           </div>
 
-          <div className="development p-6 shadow-md m-3">
+          <div className="development shadow-md">
              <div className="image-flex">
-               <img className="expertise-logo" src="/img/development-logo.png" alt="design logo picture with orange color" />
+               <img className="expertise-logo" src="/img/expertise/development.png" alt="design logo picture with orange color" />
              </div>
           <h3>Development</h3>
           <p>
@@ -140,16 +137,12 @@ gsap.registerPlugin(ScrollTrigger);
           </p>
           <p><strong>What I build</strong></p>
           <ul>
-            <ul>
             <li>HTML, CSS, JavaScript</li>
             <li>React,Next.js</li>
             <li>basic typescript, PHP and MySQL</li>
             <li>Sass</li>
             <li>Wordpress</li>
              <li>Github maintenance</li>
-            
-          </ul>
-            
           </ul>
 
           <p><strong>Tool</strong></p>
@@ -162,9 +155,9 @@ gsap.registerPlugin(ScrollTrigger);
 
           </div>
 
-          <div className="marketing p-6 shadow-md m-3">
+          <div className="marketing shadow-md">
              <div className="image-flex">
-                <img className="expertise-logo" src="/img/marketing-logo.png" alt="design logo picture with orange color" />
+                <img className="expertise-logo" src="/img/expertise/seo.png" alt="design logo picture with orange color" />
              </div>
           <h3>Marketing</h3>
           <p>
@@ -192,14 +185,12 @@ gsap.registerPlugin(ScrollTrigger);
         </div>
         </section>
 
-       
-
-
-  
+      <section className="section project">
+        <h2>My Work</h2>
+        <FeaturedProjects />
       </section>
-     
-      <h2>My Work</h2>
-      <Project />
+
+      <section className="section work-experience">
       <h2>Working Experience</h2>
       <div ref={expertiseRef}>
         <h3>SEO & Web Marketing Company – Web Developer </h3>
@@ -212,7 +203,7 @@ gsap.registerPlugin(ScrollTrigger);
       <li>Created PowerPoint-based SEO proposals for clients</li>
      </ul>
       </div>
-      
+      </section>
       </main>
       <Footer />
       </>
