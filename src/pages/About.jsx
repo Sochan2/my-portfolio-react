@@ -6,16 +6,25 @@ export default function AboutUs(){
     <>
     <Header />
     <main>
-    <section className="section split about_me grid grid-cols-1 md:grid-cols-2">
+    <section className="section split grid grid-cols-1 md:grid-cols-2">
 
-      <div className = "aboutme-grid-text text-center ">
-      <p>About Me Little</p>
-     <h1 className="page-title">User-Centric Frontend Development</h1>
-     <p>I am Soki, who is a frontend developer specializing in building responsive, user-friendly websites and apps. With a strong foundation in HTML, CSS, and JavaScript, along with modern tools like React, I am passionate about creating intuitive and engaging digital experiences.</p>
+      <div className="text-left space-y-4">
+        <h1 className="page-title font-extrabold text-zinc-900">
+          User-Centric<br />
+          <span className="text-zinc-700">Frontend Development</span>
+        </h1>
+
+        <p className="text-zinc-600">I am Soki, who is a frontend developer specializing in building responsive, user-friendly websites and apps. With a strong foundation in HTML, CSS, and JavaScript, along with modern tools like React, I am passionate about creating intuitive and engaging digital experiences.</p>
       </div>
 
-      <div className = "aboutme-grid-picture">
-        <img src="/img/about/hero.png" alt="Soki Iwae profile picture" />
+      <div className="flex justify-center md:justify-end">
+        <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-lg border border-zinc-100 bg-zinc-50 aspect-[4/3]">
+          <img
+            src="/img/about/hero.png"
+            alt="Soki Iwae profile picture"
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          />
+        </div>
       </div>
    </section>
 
@@ -43,12 +52,22 @@ my background in both business and tech gives me a unique perspective and this p
 
        <div className="education-text ">
        <h2>Education</h2>
-       <p><strong>TAFE Webdevelopment Frontend Diploma  </strong>/ 2025</p>
-       <p>Focus on frontend frameworks, UI/UX, and responsive design</p>
-       <p><strong>TAFE Information Technology web development CertificateIV</strong>  / 2024</p>
-       <p>Gained foundation in HTML, CSS, JavaScript, and web standards</p>
-       <p><strong>inki University Business administration Bachelar </strong>/ 2023 </p>
-       <p> Studied management, marketing, and business strategy</p>
+       <div className="flex flex-col gap-4">
+       <div>
+       <h3><strong>TAFE Webdevelopment Frontend Diploma  </strong>/ 2025</h3>
+       <p className="text-left">Focus on frontend frameworks, UI/UX, and responsive design</p>
+       </div>
+
+       <div>
+       <h3><strong>TAFE Information Technology web development CertificateIV</strong>  / 2024</h3>
+       <p className="text-left">Gained foundation in HTML, CSS, JavaScript, and web standards</p>
+       </div>
+
+       <div>
+       <h3><strong>Kinki University Business administration Bachelar </strong>/ 2023 </h3>
+       <p className="text-left"> Studied management, marketing, and business strategy</p>
+       </div>
+       </div>
        </div>
     
    </section>

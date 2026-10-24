@@ -49,7 +49,7 @@ gsap.registerPlugin(ScrollTrigger);
       opacity:0,
      },
      {
-    x: 0,                    // 元の位置へ
+    x: 0,                  
     opacity: 1,
     duration: 1,
     ease: "power2.out",
@@ -71,6 +71,9 @@ gsap.registerPlugin(ScrollTrigger);
     <section className="section about_me" ref={aboutRef}>
       <div className="hero-grid">
         <div className="hero-text">
+        <div className="label-container">
+          <span className="label">DESIGN ENGINEER</span>
+          </div>
            <h1 className="">less noise<br></br>
       more flow </h1>
       <div className="hero-sub-text">
@@ -79,109 +82,64 @@ gsap.registerPlugin(ScrollTrigger);
         </div>
 
         <div className="hero-image">
-          <img ref={imgRef} src="/img/home/portfolio-hero.png" alt=" do coding" />
+          <img className="h-lvh" ref={imgRef} src="/img/home/portfolio-hero.png" alt=" do coding" />
         </div>
         
      
       </div>
      
-      <h2>Frontend Developer with UI/UX & Marketing background</h2>
-      <h3>I design code simply and beautifully!!</h3>
-     
-      
-      <img src="/img/home/soki-coder.gif" alt=" do coding" />
     </section>
 
-      <section className="section expertise-section text-center">
+      <section className="section expertise-section">
 
            <h2>My Expertise</h2>
       
        
        
-        <div className="expertise-grid card-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="design-section shadow-md">
-            <div className="image-flex">
-                <img className="expertise-logo" src="/img/expertise/design.png" alt="design logo picture with orange color" />
-            </div>
-        
-          <h3>Design</h3>
-
-          <p>
-            I value simplicity in design and focus on creating clean, user-friendly interfaces.
-          </p>
-          <p><strong>What I will design</strong></p>
-          <ul>
-            <li>UX, UI</li>
-            <li>Wireframe and Mockup</li>
-            <li>Color palletes</li>
-            
+        <div className="card-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="expertise-card shadow-md">
+          <img className="expertise-logo" src="/img/expertise/design.png" alt="design logo picture with orange color" />
+          <div className="flex flex-col gap-2">
+          <h3>UI/UX & Design Systems</h3>
+          <ul className="badge-container">
+            <li className="badge">Figma</li>
+            <li className="badge">Auto Layout</li>
+            <li className="badge">Framer</li>
+            <li className="badge">Wireframe</li>
           </ul>
-
-          <p><strong>Tool</strong></p>
-          <ul>
-            <li>Figma</li>
-            <li>Draw.io</li>
-            <li>Canva</li>
-          </ul>
-
-
+          <p>Not only aesthetic of UI, also make structures of wireframe and mockup in framer considering behavioral psychology and accessibilities.</p>
+          </div>
           </div>
 
-          <div className="development shadow-md">
-             <div className="image-flex">
-               <img className="expertise-logo" src="/img/expertise/development.png" alt="design logo picture with orange color" />
-             </div>
-          <h3>Development</h3>
-          <p>
-          I write clean and understandable code that is easy for teams to work together and maintain. 
-          </p>
-          <p><strong>What I build</strong></p>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React,Next.js</li>
-            <li>basic typescript, PHP and MySQL</li>
-            <li>Sass</li>
-            <li>Wordpress</li>
-             <li>Github maintenance</li>
+          <div className="expertise-card shadow-md">
+          <img className="expertise-logo" src="/img/expertise/development.png" alt="design logo picture with orange color" />
+          <div className="flex flex-col gap-2">
+          <h3>Front-End Engineering</h3>
+          <ul className="badge-container">
+            <li className="badge">HTML/ CSS/JavaScript</li>
+            <li className="badge">Typescript/React/Next.js</li>
+            <li className="badge">WordPress</li>
+            <li className="badge">Github maintainance</li>
           </ul>
-
-          <p><strong>Tool</strong></p>
-          <ul>
-            <li>Tailwind</li>
-            <li>Bootstrap</li>
-            <li>VS code</li>
-            <li>GitHub</li>
-          </ul>
-
+          <p>Provide application development smoothly from HTML, CSS and WordPress to modern frontend technologies such as React, Next.js and Typescript.</p>
+          </div>
+         
           </div>
 
-          <div className="marketing shadow-md">
-             <div className="image-flex">
-                <img className="expertise-logo" src="/img/expertise/seo.png" alt="design logo picture with orange color" />
-             </div>
-          <h3>Marketing</h3>
-          <p>
-          Designed the UI based on a primary persona: Hidden artists seeking the place where they sell their artworks. The best thing is making community with their fans. This led to clean layouts, minimal distractions, and a structured comment system.I analyze user behaviour and apply those insights to SEO strategies to improve engagement. </p>
-          <p><strong>What I will analyze</strong></p>
-          <ul>
-            <li>Persona</li>
-            <li>Segmentation</li>
-            <li>Market Research</li>
-            <li>AB testing</li>
+          <div className="expertise-card shadow-md">
+          <img className="expertise-logo" src="/img/expertise/seo.png" alt="design logo picture with orange color" />
+          <div className="flex flex-col gap-2">
+          <h3>SEO & Growth Strategy</h3>
+          <ul className="badge-container">
+            <li className="badge">SEO</li>
+            <li className="badge">Keyword Analysis</li>
+            <li className="badge">CVR Improvement</li>
+            <li className="badge">Google Analytics</li>
+            <li className="badge">Google Search Console</li>
           </ul>
-
-          <p><strong>Tool</strong></p>
-          <ul>
-            <li>Google Analytics</li>
-            <li>Google Search Console</li>
-            <li>Keyword Planner</li>
-          </ul>
-
+          <p>Maltiple with SEO perspective from working experence and basic marketing knowledge that I studied at university and suggest web to connect benefits.</p>
+          </div>          
           </div>
-          
-      
-     
-
         </div>
         </section>
 

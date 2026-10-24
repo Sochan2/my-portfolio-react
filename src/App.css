@@ -478,24 +478,6 @@ nav a:hover::after {
   color: #fff;
 }
 
-.expertise-grid {
-  position: relative;
-  z-index: 2;
-  padding: var(--card-padding);
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.expertise-grid > div {
-  padding: var(--card-padding);
-}
-
-.expertise-grid p strong {
-  display: block;
-  margin-top: var(--grid-gap);
-  color: var(--color-accent);
-}
-
 .expertise-card {
   position: relative;
   width: 100%;
